@@ -43,5 +43,6 @@ cta_button_label: contact # the label on the button
 ---			
 [//]: # (write a bit about yourself here)
 ### About  
-
+The personal wesbite of Steven Becker. 
+The website is under construction.
 
