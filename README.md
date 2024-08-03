@@ -1,51 +1,94 @@
-# Academic Pages
+# hello: a minimalist template for personal websites on Github Pages
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+## Why **hello**?  
+  
+**hello** has a simple goal: to make GitHub Pages accessible to everyone.  
+  
 
-Academic Pages is a Github Pages template for academic websites.
+**hello** is a minimalist template that lets you design a beautiful website or portfolio on GitHub Pages - without installing a Ruby
+development environment, learning to use Jekyll, **or even typing a single line of code**. It's ideal for GitHubbers
+who want to start building their personal website on [GitHub Pages](https://pages.github.com/), but maybe aren't so familiar with web development.
+  
 
-# Getting Started
+The default layout of **hello** is a streamlined single page with three major customizable sections: a required "about" section, an optional portfolio, and an optional CTA. Using [Liquid](https://shopify.github.io/liquid/) variables declared by in the config and index files, **hello** offers an easy-to-use design where all customizations necessary for a basic personal website can be written in [Markdown](https://www.markdownguide.org/basic-syntax/). **hello** is adapted from [Twenty](https://html5up.net/twenty), a responsive, mobile-friendly theme by HTML5 Up.  
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
 
-See more info at https://academicpages.github.io/
+Demo **hello** [here](https://saragong.github.io/hello/).
 
-## Running Locally
+## Getting started
+To use **hello**, follow these steps:
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+1. Click the green "Use this template" button on the main page of the **hello** repository.
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+2. Follow the instructions to create a new repository from **hello**, setting the repository name as "*your-username*.github.io".
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+3. Under **Settings** for this new repo, navigate to the **GitHub Pages** section and ensure that GitHub Pages is enabled for the `master` branch.
 
-# Maintenance
+4. On the command line, clone this new repository to your local directory.
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+```
+$ git clone https://github.com/*your-username*/*your-username*.github.io.git
+```
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+5. Navigate into the project folder, open the `_config.yml` and `index.md` files in your preferred text editor, and start customizing your website!
 
-## Bugfixes and enhancements
+6. When you're ready to see your work, commit your changes to the remote repo.
+```
+$ git add .
+$ git commit -m "first commit"
+$ git push origin master
+```
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+7. In just a few moments, Github will build your shiny new website at "https://*your-username*.github.io/".
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+## Usage
+
+### The following variables are required:
+
+`_config.yml`:
+* `title`
+* `author`
+* `description`
+* `baseurl`  
+
+`index.md`:
+* `banner_title`
+* `banner_subtitle`
+* `background_image`
+
+### The following variables are optional:
+`index.md`:
+* `favicon`
+* `facebook_username`
+* `twitter_username`
+* `github_username`
+* `linkedin`
+* `google_analytics` (your Google Analytics Tracking ID)
+
+By declaring these variables, you can include a button that links to an external website or to media.
+* `about_button` (the link)
+* `about_button_label` (the label on the button)
+
+By declaring these variables, you can include a portfolio showcasing your work and organize your portfolio's items into a custom layout, all without adding any CSS. In addition, you must 1) create an HTML file in the_includes folder for each project with the text you'd like to display, and 2) create a YAML file in the _data folder describing how each project should be shown and categorized. See `/includes/example.html` and `/_data/work.yml` for examples.
+* `portfolio` (the heading for your portfolio and title of your YAML file)
+* `portfolio_description` (a description to be displayed below the heading and above the content)
+
+By declaring these variables, you can include a CTA section.
+* `cta` (the heading for your CTA section)
+* `cta_description` (a description to be displayed below the heading and above the content)
+* `cta_button` (a link to an external website or to media)
+* `cta_button_label` (the label on the button)
+
+## Additional Information
+Created by [Sara Gong](https://saragong.github.io/), University of Southern California.  
+
+This work is licensed under the MIT License, which lets you use, modify, and publish adaptations of this template free of charge and without restriction, as long as you preserve all copyright notices and licenses.  
+
+This original theme, of which this is an adaptation, is licensed by HTML5 Up under the [Creative Commons Attribution 3.0 License](https://creativecommons.org/licenses/by/3.0/).  
+
+The images from the demo website are from [Unsplash](https://unsplash.com/).
+
+## Theme Information
+Twenty by HTML5 UP  
+html5up.net | @n33co  
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
