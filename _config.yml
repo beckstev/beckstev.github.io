@@ -5,7 +5,7 @@ title: Steven Becker
 author: Steven Becker
 description: > 
  A personal website
-baseurl: ""
+baseurl: "/hello"
 
 plugins:
   - jekyll-feed
