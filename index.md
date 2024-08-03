@@ -5,11 +5,11 @@ layout: hello-default
 
 # these variables are required -------------------------------
 banner_title: Steven Becker
-banner_subtitle: - Personal website -
+banner_subtitle: Personal website
 background_image: /images/my_background.JPG
 
 # all of the following variables are optional -----------------
-page_url:  # only include this variable if you aren't building the page to your primary domain 
+page_url: /hello # only include this variable if you aren't building the page to your primary domain 
 
 # favicon
 favicon: /assets/ico/favicon.ico
