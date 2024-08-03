@@ -4,12 +4,12 @@ layout: hello-default
 # using Markdown language, you can customize the following variables!
 
 # these variables are required -------------------------------
-banner_title: hello for github pages
-banner_subtitle: a minimalist template for personal websites
-background_image: /images/background.jpeg
+banner_title: Steven Becker
+banner_subtitle: - Personal website -
+background_image: /images/my_background.JPG
 
 # all of the following variables are optional -----------------
-page_url: /hello # only include this variable if you aren't building the page to your primary domain 
+page_url:  # only include this variable if you aren't building the page to your primary domain 
 
 # favicon
 favicon: /assets/ico/favicon.ico
@@ -22,7 +22,7 @@ linkedin: saragong # the part after ("https://www.linkedin.com/in/...")
 # google_analytics: <-- your google analytics Tracking ID
 
 # By declaring these variables, you can include a button that links to an external website or to media.
-about_button: https://github.com/saragong/hello # the link
+about_button: beckstev.com   # the link
 about_button_label: get hello # the label on the button
 
 # optional portfolio section ------------------------------------------
