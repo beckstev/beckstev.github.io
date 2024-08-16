@@ -16,12 +16,12 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
   username: "beckstev",
-  title: "Moin, I'm Steven",
+  title: "Moin, I am Steven",
   subTitle: emoji("A PhD student in photonic machine learning."),
   resumeLink: "", // Set to empty to hide the button; https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing
   displayGreeting: true // Set false to hide this section, defaults to true
