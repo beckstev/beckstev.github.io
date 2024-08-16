@@ -1,5 +1,5 @@
 {
-  "homepage": "https://https://beckstev.github.io",
+  "homepage": "https://beckstev.github.io",
   "name": "developerfolio",
   "version": "0.1.0",
   "private": true,
@@ -51,7 +51,8 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "dotenv": "^8.2.0",
+    "ajv": "^8.17.1",
+    "dotenv": "^8.6.0",
     "gh-pages": "^2.2.0",
     "prettier": "^2.3.1"
   }
