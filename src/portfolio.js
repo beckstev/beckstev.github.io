@@ -8,7 +8,7 @@ import splashAnimation from "./assets/images/profile_picutre_webapge-1.jpg"; // 
 // Splash Screen
 
 const splashScreen = {
-  enabled: true, // set false to disable splash screen
+  enabled: false, // set false to disable splash screen
   animation: splashAnimation,
   duration: 2000 // Set animation duration as per your animation
 };
@@ -16,7 +16,7 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: false // Set to false to use static SVG
+  animated: true // Set to false to use static SVG
 };
 
 const greeting = {
