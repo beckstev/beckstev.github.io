@@ -22,11 +22,8 @@ const illustration = {
 const greeting = {
   username: "bec",
   title: "Hi all, I'm Steven",
-  subTitle: emoji(
-    "A PhD student in photonic machine learning."
-  ),
-  resumeLink:
-    "", // Set to empty to hide the button; https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing
+  subTitle: emoji("A PhD student in photonic machine learning."),
+  resumeLink: "", // Set to empty to hide the button; https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -54,10 +51,10 @@ const skillsSection = {
     emoji(
       "⚡ Explored for the first time the interaction between light, sound, and photonic machine learning"
     ),
-    emoji("⚡ Managed multiple research projects from the start to their completion"),
     emoji(
-      "⚡ Presented at international conferences"
-    )
+      "⚡ Managed multiple research projects from the start to their completion"
+    ),
+    emoji("⚡ Presented at international conferences")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -150,7 +147,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -331,9 +328,7 @@ const blogSection = {
 
 const talkSection = {
   title: "TALKS",
-  subtitle: emoji(
-    "My talks at international conferences  "
-  ),
+  subtitle: emoji("My talks at international conferences  "),
 
   talks: [
     {
