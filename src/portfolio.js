@@ -214,7 +214,8 @@ const openSource = {
 
 const bigProjects = {
   title: "Scientific Articles",
-  subtitle: "This would not have been possible without all the people supporting me - thank you 🤗",
+  subtitle:
+    "This would not have been possible without all the people supporting me - thank you 🤗",
   projects: [
     {
       image: require("./assets/images/nla_image_square.png"),
@@ -323,38 +324,38 @@ const talksData = {
       subtitle: "Codelab at GDG DevFest Karachi 2019",
       slides_url: "",
       event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/cold_memory_image.png"),
+      image: require("./assets/images/cold_memory_image.png")
     },
     {
       title: "High-speed coherent photonic random access memory...",
       subtitle: "Codelab at GDG DevFest Karachi 2019",
       slides_url: "",
       event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/cold_memory_image.png"),
+      image: require("./assets/images/cold_memory_image.png")
     },
     {
       title: "High-speed coherent photonic random access memory...",
       subtitle: "Codelab at GDG DevFest Karachi 2019",
       slides_url: "",
       event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/cold_memory_image.png"),
+      image: require("./assets/images/cold_memory_image.png")
     },
     {
       title: "High-speed coherent photonic random access memory...",
       subtitle: "Codelab at GDG DevFest Karachi 2019",
       slides_url: "",
       event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/cold_memory_image.png"),
+      image: require("./assets/images/cold_memory_image.png")
     },
     {
       title: "High-speed coherent photonic random access memory...",
       subtitle: "Codelab at GDG DevFest Karachi 2019",
       slides_url: "",
       event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/cold_memory_image.png"),
-    },
+      image: require("./assets/images/cold_memory_image.png")
+    }
     // Add more talks objects here
-  ],
+  ]
 };
 
 // Blogs Section
@@ -389,7 +390,8 @@ const talkSection = {
 
   talks: [
     {
-      title: "High-speed coherent photonic random access memory in long-lasting sound waves",
+      title:
+        "High-speed coherent photonic random access memory in long-lasting sound waves",
       subtitle: "Codelab at GDG DevFest Karachi 2019",
       slides_url: "",
       event_url: "https://www.facebook.com/events/2339906106275053/",

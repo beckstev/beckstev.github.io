@@ -1,21 +1,23 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, {useState, useEffect, useContext} from "react";
 import "./TalkCarousel.scss"; // Import your SCSS file
-import { Fade } from "react-reveal"; // Assuming you're using react-reveal
+import {Fade} from "react-reveal"; // Assuming you're using react-reveal
 import StyleContext from "../../contexts/StyleContext"; // Assuming your context
 import {talksData} from "../../portfolio";
 
 export default function TalksCarousel() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [autoplay, setAutoplay] = useState(false); // Optional: Enable autoplay
-  
 
   const handleNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % talksData.talks.length);
+    setCurrentSlide(prevSlide => (prevSlide + 1) % talksData.talks.length);
   };
 
   const handlePrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + talksData.talks.length) % talksData.talks.length);
+    setCurrentSlide(
+      prevSlide =>
+        (prevSlide - 1 + talksData.talks.length) % talksData.talks.length
+    );
   };
 
   useEffect(() => {
@@ -31,7 +33,9 @@ export default function TalksCarousel() {
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="talks-carousel">
-        <h2 className={isDark ? "dark-mode talks-title" : "talks-title"}>Talks</h2>
+        <h2 className={isDark ? "dark-mode talks-title" : "talks-title"}>
+          Talks
+        </h2>
         <div className="talks-container">
           {talksData.talks.map((talk, index) => (
             <div
@@ -49,7 +53,11 @@ export default function TalksCarousel() {
                 <h3 className={isDark ? "dark-mode card-title" : "card-title"}>
                   {talk.title}
                 </h3>
-                <p className={isDark ? "dark-mode card-description" : "card-description"}>
+                <p
+                  className={
+                    isDark ? "dark-mode card-description" : "card-description"
+                  }
+                >
                   {currentSlide}
                 </p>
               </div>
