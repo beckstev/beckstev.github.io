@@ -3,7 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/images/profile_picutre_webapge-1.jpg"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/images/profile_picutre_webapge-circle_rescalded.png"; // Rename to your file name for custom animation
 
 // Splash Screen
 
@@ -45,16 +45,21 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "What I do as a scientist",
   subTitle: "I harvest sound waves for photonic machine learning.",
   skills: [
     emoji(
       "⚡ Explored for the first time the interaction between light, sound, and photonic machine learning"
     ),
     emoji(
-      "⚡ Managed multiple research projects from the start to their completion"
+      "⚡ Experientially captured the context carried by a set of light pulses using sound waves"
     ),
-    emoji("⚡ Presented at international conferences")
+    emoji(
+      "⚡ Demonstrated an-all optical nonlinear activation function mimicking the behavior of neurons"
+    ),
+    emoji(
+      "⚡ Showcased a method to store information carried by light pulses in sound waves over ten times longer as previous status-quo"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -208,34 +213,45 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Scientific Articles",
+  subtitle: "This would not have been possible without all the people supporting me - thank you 🤗",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/nla_image_square.png"),
+      projectName: "Optoacoustic activation function",
+      projectDesc: "Nonlinear signal processing leveraging sound waves",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "See article",
+          url: "https://arxiv.org/abs/2401.05135"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/oreo_concept_with_copyright.png"),
+      projectName: "Optoacoustic Recurrent Operator",
+      projectDesc: "Processing context with sound waves",
+      footerLink: [
+        {
+          name: "See article",
+          url: "https://www.nature.com/articles/s41467-024-47053-6"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/cold_memory_image.png"),
+      projectName: "Photonic RAM in long-lasting sound waves",
+      projectDesc: "Storing optical information in sound waves",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "See article",
+          url: "https://arxiv.org/abs/2311.06219"
         }
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -299,6 +315,48 @@ const achievementSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
+const talksData = {
+  display: true,
+  talks: [
+    {
+      title: "High-speed coherent photonic random access memory...",
+      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      slides_url: "",
+      event_url: "https://www.facebook.com/events/2339906106275053/",
+      image: require("./assets/images/cold_memory_image.png"),
+    },
+    {
+      title: "High-speed coherent photonic random access memory...",
+      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      slides_url: "",
+      event_url: "https://www.facebook.com/events/2339906106275053/",
+      image: require("./assets/images/cold_memory_image.png"),
+    },
+    {
+      title: "High-speed coherent photonic random access memory...",
+      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      slides_url: "",
+      event_url: "https://www.facebook.com/events/2339906106275053/",
+      image: require("./assets/images/cold_memory_image.png"),
+    },
+    {
+      title: "High-speed coherent photonic random access memory...",
+      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      slides_url: "",
+      event_url: "https://www.facebook.com/events/2339906106275053/",
+      image: require("./assets/images/cold_memory_image.png"),
+    },
+    {
+      title: "High-speed coherent photonic random access memory...",
+      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      slides_url: "",
+      event_url: "https://www.facebook.com/events/2339906106275053/",
+      image: require("./assets/images/cold_memory_image.png"),
+    },
+    // Add more talks objects here
+  ],
+};
+
 // Blogs Section
 
 const blogSection = {
@@ -320,21 +378,22 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
-  subtitle: emoji("My talks at international conferences  "),
+  title: "Talks and Posters",
+  subtitle: emoji("A collection of my first author contributions"),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
+      title: "High-speed coherent photonic random access memory in long-lasting sound waves",
       subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
+      slides_url: "",
+      event_url: "https://www.facebook.com/events/2339906106275053/",
+      image: require("./assets/images/cold_memory_image.png")
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -397,5 +456,6 @@ export {
   contactInfo,
   twitterDetails,
   isHireable,
-  resumeSection
+  resumeSection,
+  talksData
 };

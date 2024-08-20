@@ -57,7 +57,7 @@ export default function Greeting() {
             ) : (
               <img
                 alt="Profil picture Steven Becker"
-                src={require("../../assets/images/profile_picutre_webapge-1.jpg")}
+                src={require("../../assets/images/profile_picutre_webapge-circle_rescalded.png")}
               ></img>
             )}
           </div>
