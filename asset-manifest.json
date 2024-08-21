@@ -1,21 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.240e208a.css",
-    "main.js": "/static/js/main.0f8cac0d.js",
+    "main.css": "/static/css/main.c5083864.css",
+    "main.js": "/static/js/main.4e202192.js",
     "static/css/487.bb36206c.chunk.css": "/static/css/487.bb36206c.chunk.css",
     "static/js/487.7ae187c0.chunk.js": "/static/js/487.7ae187c0.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
     "static/js/990.6a8db7e7.chunk.js": "/static/js/990.6a8db7e7.chunk.js",
+    "static/media/coffee_chat_invite.png": "/static/media/coffee_chat_invite.5b39ca1cf1fb311d7159.png",
+    "static/media/no_image_available.png": "/static/media/no_image_available.a63bee75011adbe6e94b.png",
     "static/media/oreo_concept_with_copyright.png": "/static/media/oreo_concept_with_copyright.194ee43250836e1de712.png",
     "static/media/profile_picutre_webapge-circle_rescalded.png": "/static/media/profile_picutre_webapge-circle_rescalded.ea9396e153a5dbc46f61.png",
+    "static/media/image_hereaus.jpg": "/static/media/image_hereaus.277de88fe8d555d389d1.jpg",
     "static/media/lab_image.jpg": "/static/media/lab_image.7157a5fa9808a0f9473d.jpg",
+    "static/media/image_fronties_in_neuromoprhic_computing.jpg": "/static/media/image_fronties_in_neuromoprhic_computing.8e1670ff2f47c641bdcf.jpg",
     "static/media/stanfordLogo.png": "/static/media/stanfordLogo.5a8e3a0a00949c93a9b8.png",
+    "static/media/image_CLEO_europe.jpg": "/static/media/image_CLEO_europe.36a16d63af7dd1e3a8f3.jpg",
     "static/media/harvardLogo.png": "/static/media/harvardLogo.542dab89bfb35b7f5c0d.png",
+    "static/media/image_Cleo_US.jpeg": "/static/media/image_Cleo_US.d7fe9b6cfdd35d2dee0c.jpeg",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/cold_memory_image.png": "/static/media/cold_memory_image.90727a84b5b5c9636335.png",
     "static/media/nla_image_square.png": "/static/media/nla_image_square.c8e6eccc8711e6485c8b.png",
+    "static/media/image_SPIE_photonics_2.jpg": "/static/media/image_SPIE_photonics_2.e8050443ccf4dc01adf0.jpg",
+    "static/media/image_SPIE_photonics.jpg": "/static/media/image_SPIE_photonics.17a4da75db6edfee11b2.jpg",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
-    "static/media/contactMailDark.svg": "/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/quoraLogo.png": "/static/media/quoraLogo.85eb29f4d52320c8ed99.png",
     "static/media/googleAssistantLogo.webp": "/static/media/googleAssistantLogo.f720c71652579588524a.webp",
     "static/media/airbnbLogo.png": "/static/media/airbnbLogo.e8497507db673acd3991.png",
@@ -26,15 +33,15 @@
     "static/media/pwaLogo.webp": "/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.240e208a.css.map": "/static/css/main.240e208a.css.map",
-    "main.0f8cac0d.js.map": "/static/js/main.0f8cac0d.js.map",
+    "main.c5083864.css.map": "/static/css/main.c5083864.css.map",
+    "main.4e202192.js.map": "/static/js/main.4e202192.js.map",
     "487.bb36206c.chunk.css.map": "/static/css/487.bb36206c.chunk.css.map",
     "487.7ae187c0.chunk.js.map": "/static/js/487.7ae187c0.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
     "990.6a8db7e7.chunk.js.map": "/static/js/990.6a8db7e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.240e208a.css",
-    "static/js/main.0f8cac0d.js"
+    "static/css/main.c5083864.css",
+    "static/js/main.4e202192.js"
   ]
 }
