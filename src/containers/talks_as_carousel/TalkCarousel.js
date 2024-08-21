@@ -1,13 +1,13 @@
 import React, {useState, useEffect, useContext} from "react";
-import "./TalkCarousel.scss"; // Import your SCSS file
-import {Fade} from "react-reveal"; // Assuming you're using react-reveal
-import StyleContext from "../../contexts/StyleContext"; // Assuming your context
+import "./TalkCarousel.scss";
+import {Fade} from "react-reveal";
+import StyleContext from "../../contexts/StyleContext";
 import {talksData} from "../../portfolio";
 
 export default function TalksCarousel() {
   const {isDark} = useContext(StyleContext);
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [autoplay, setAutoplay] = useState(false); // Optional: Enable autoplay
+  const [currentSlide, setCurrentSlide] = useState(1);
+  const [autoplay, setAutoplay] = useState(false);
 
   const handleNextSlide = () => {
     setCurrentSlide(prevSlide => (prevSlide + 1) % talksData.talks.length);
@@ -24,27 +24,50 @@ export default function TalksCarousel() {
     if (autoplay) {
       const intervalId = setInterval(() => {
         handleNextSlide();
-      }, 5000); // Change interval as needed
+      }, 5000);
 
       return () => clearInterval(intervalId);
     }
-  }, [autoplay, talksData.talks.length]); // Dependencies for effect
+  }, [autoplay]);
+
+  // Helper function to calculate opacity based on slide index
+  const getOpacity = index => {
+    if (index === currentSlide) return 1; // Fully visible for the center slide
+    if (
+      index ===
+        (currentSlide - 1 + talksData.talks.length) % talksData.talks.length ||
+      index === (currentSlide + 1) % talksData.talks.length
+    )
+      return 0.25; // 50% opacity for side slides
+    return 0; // Hide other slides
+  };
 
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="talks-carousel">
-        <h2 className={isDark ? "dark-mode talks-title" : "talks-title"}>
-          Talks
-        </h2>
+      <div className="main" id="talks-carousel">
+        <div className="talk-header">
+          <h1 className="talk-header-title">{talksData.title}</h1>
+          <p
+            className={
+              isDark
+                ? "dark-mode talk-header-subtitle"
+                : "subTitle talk-header-subtitle"
+            }
+          >
+            {talksData.subtitle}
+          </p>
+        </div>
+
         <div className="talks-container">
           {talksData.talks.map((talk, index) => (
             <div
               key={index}
-              className={
-                currentSlide == index
-                  ? `talk-card active ${isDark ? "dark-mode" : ""}`
-                  : `talk-card ${isDark ? "dark-mode" : ""}`
-              }
+              className={`talk-card ${isDark ? "dark-mode" : ""}`}
+              style={{
+                opacity: getOpacity(index),
+                transform: index === currentSlide ? "scale(1)" : "scale(.75)", // Slightly scale up the center slide
+                display: getOpacity(index) > 0 ? "block" : "none" // Show only relevant slides
+              }}
             >
               <div className="talk-image">
                 <img src={talk.image} alt={talk.title} className="card-image" />
@@ -58,7 +81,21 @@ export default function TalksCarousel() {
                     isDark ? "dark-mode card-description" : "card-description"
                   }
                 >
-                  {currentSlide}
+                  {talk.description}
+                </p>
+                <p
+                  className={
+                    isDark ? "dark-mode card-description" : "card-description"
+                  }
+                >
+                  {talk.coauthors}
+                </p>
+                <p
+                  className={
+                    isDark ? "dark-mode card-location" : "card-location"
+                  }
+                >
+                  <strong>{talk.location}</strong>
                 </p>
               </div>
             </div>
@@ -67,27 +104,15 @@ export default function TalksCarousel() {
         <button
           className={`slide-button prev ${isDark ? "dark-mode" : ""}`}
           onClick={handlePrevSlide}
-          disabled={currentSlide === 0}
         >
           Previous
         </button>
         <button
           className={`slide-button next ${isDark ? "dark-mode" : ""}`}
           onClick={handleNextSlide}
-          disabled={currentSlide === talksData.talks.length - 1}
         >
           Next
         </button>
-        {/* Optional: Autoplay toggle */}
-        {/* <label htmlFor="autoplay-toggle">
-          Autoplay:
-          <input
-            type="checkbox"
-            id="autoplay-toggle"
-            checked={autoplay}
-            onChange={() => setAutoplay(!autoplay)}
-          />
-        </label> */}
       </div>
     </Fade>
   );

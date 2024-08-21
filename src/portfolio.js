@@ -45,7 +45,7 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do as a scientist",
+  title: "Being a scientist",
   subTitle: "I harvest sound waves for photonic machine learning.",
   skills: [
     emoji(
@@ -317,42 +317,87 @@ const achievementSection = {
 };
 
 const talksData = {
+  title: "Talks and Posters",
+  subtitle: emoji("A collection of my first author contributions"),
   display: true,
   talks: [
     {
-      title: "High-speed coherent photonic random access memory...",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      title:
+        "High-speed coherent photonic random access memory in long-lasting sound waves",
+      description: "Best Poster Award",
+      coauthors: "Co-authors: A. Geilen, and B. Stiller",
+      location:
+        "📍 WE-Heraeus-Seminar Photonics for Information Processing, Germany (2024)",
       slides_url: "",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/cold_memory_image.png")
+      event_url: "",
+      image: require("./assets/images/image_hereaus.jpg")
     },
     {
-      title: "High-speed coherent photonic random access memory...",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      title:
+        "Deep recurrent neural networks operations based on stimulated Brillouin scattering",
+      description: "Talk",
+      location: "📍 CLEO US, USA (2024)",
+      coauthors: "Co-authors: J.H. Marines Cabello, D. Englund, and B. Stiller",
       slides_url: "",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/cold_memory_image.png")
+      event_url: "",
+      image: require("./assets/images/image_Cleo_US.jpeg")
     },
     {
-      title: "High-speed coherent photonic random access memory...",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      title:
+        "High-speed coherent photonic random access memory in long-lasting sound waves",
+      description: "Talk",
+      location: "📍 SPIE Photonics Europe, France (2024)",
+      coauthors: "Co-authors: A. Geilen∗, and B. Stiller",
       slides_url: "",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/cold_memory_image.png")
+      event_url: "",
+      image: require("./assets/images/image_SPIE_photonics.jpg")
     },
     {
-      title: "High-speed coherent photonic random access memory...",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      title: "Optoacoustic recurrent operator",
+      description: "Talk",
+      location: "📍 SPIE Photonics Europe, France (2024)",
+      coauthors: "Co-authors: D. Englund, and B. Stiller",
       slides_url: "",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/cold_memory_image.png")
+      event_url: "",
+      image: require("./assets/images/image_SPIE_photonics_2.jpg")
     },
     {
-      title: "High-speed coherent photonic random access memory...",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
+      title: "Optoacoustic recurrent operator",
+      description: "Post deadline talk",
+      location: "📍 Photonics in Switching and Computing, Italy (2023)",
+      coauthors: "Co-authors: D. Englund, and B. Stiller",
       slides_url: "",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/cold_memory_image.png")
+      event_url: "",
+      image: require("./assets/images/no_image_available.png")
+    },
+    {
+      title:
+        "Order of magnitude increase in storage time of photonic-phononic memory",
+      description: "Talk",
+      location: "📍 Photonics in Switching and Computing, Italy (2023)",
+      coauthors: "Co-authors: A. Geilen, and B. Stiller",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/no_image_available.png")
+    },
+    {
+      title: "Optoacoustic recurrent operator",
+      description: "Talk",
+      location: "📍 Frontiers in Neuromorphic Computing, Germany (2023)",
+      coauthors: "Co-authors: D. Englund, and B. Stiller",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/image_fronties_in_neuromoprhic_computing.jpg")
+    },
+    {
+      title:
+        "Implementation of an optoacoustic activation function based on stimulated Brillouin scattering",
+      description: "Poster",
+      location: "📍 CLEO Europe, Germany, (2023)",
+      coauthors: "Co-authors: J. Storp, and B. Stiller",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/image_CLEO_europe.jpg")
     }
     // Add more talks objects here
   ]
@@ -398,7 +443,7 @@ const talkSection = {
       image: require("./assets/images/cold_memory_image.png")
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section

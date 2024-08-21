@@ -57,8 +57,8 @@ export default function Contact() {
               <DisplayLottie animationData={email} />
             ) : (
               <img
-                alt="Man working"
-                src={require("../../assets/images/contactMailDark.svg")}
+                alt="Lets have a coffee chat"
+                src={require("../../assets/images/coffee_chat_invite.png")}
               ></img>
             )}
           </div>
