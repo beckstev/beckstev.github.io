@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0eddcad.css",
-    "main.js": "/static/js/main.b484db34.js",
+    "main.css": "/static/css/main.659da420.css",
+    "main.js": "/static/js/main.fd86b1c4.js",
     "static/css/487.bb36206c.chunk.css": "/static/css/487.bb36206c.chunk.css",
     "static/js/487.7ae187c0.chunk.js": "/static/js/487.7ae187c0.chunk.js",
     "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
-    "static/js/990.8fed5326.chunk.js": "/static/js/990.8fed5326.chunk.js",
+    "static/js/990.6a8db7e7.chunk.js": "/static/js/990.6a8db7e7.chunk.js",
     "static/media/oreo_concept_with_copyright.png": "/static/media/oreo_concept_with_copyright.194ee43250836e1de712.png",
     "static/media/image_Cleo_US_talk.JPG": "/static/media/image_Cleo_US_talk.0048523e491b8332d7d0.JPG",
     "static/media/jdpg_mv_discussion.jpeg": "/static/media/jdpg_mv_discussion.d984a4f417c63195ece7.jpeg",
@@ -34,15 +34,15 @@
     "static/media/pwaLogo.webp": "/static/media/pwaLogo.8bf2293da0ca66249e37.webp",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.d0eddcad.css.map": "/static/css/main.d0eddcad.css.map",
-    "main.b484db34.js.map": "/static/js/main.b484db34.js.map",
+    "main.659da420.css.map": "/static/css/main.659da420.css.map",
+    "main.fd86b1c4.js.map": "/static/js/main.fd86b1c4.js.map",
     "487.bb36206c.chunk.css.map": "/static/css/487.bb36206c.chunk.css.map",
     "487.7ae187c0.chunk.js.map": "/static/js/487.7ae187c0.chunk.js.map",
     "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
-    "990.8fed5326.chunk.js.map": "/static/js/990.8fed5326.chunk.js.map"
+    "990.6a8db7e7.chunk.js.map": "/static/js/990.6a8db7e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0eddcad.css",
-    "static/js/main.b484db34.js"
+    "static/css/main.659da420.css",
+    "static/js/main.fd86b1c4.js"
   ]
 }
