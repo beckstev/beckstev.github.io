@@ -44,7 +44,6 @@ export default function Skills() {
             >
               {skillsSection.subTitle}
             </p>
-            <SoftwareSkill />
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (

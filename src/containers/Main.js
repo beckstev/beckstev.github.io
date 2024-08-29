@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
 import Skills from "./skills/Skills";
-import Communicator from "./communicator/Communicator";
+import Communication from "./communicator/Communicator";
 import StackProgress from "./skillProgress/skillProgress";
 import WorkExperience from "./workExperience/WorkExperience";
 import Projects from "./projects/Projects";
@@ -64,7 +64,7 @@ const Main = () => {
             <Blogs />
             <Talks />
             <TalkCarousel />
-            <Communicator />
+            <Communication />
             <Twitter />
             <Podcast />
             <Profile />

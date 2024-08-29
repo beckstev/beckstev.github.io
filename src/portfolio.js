@@ -403,27 +403,20 @@ const talksData = {
   ]
 };
 
-
-// Being a communicator 
+// Being a communicator
 
 const communicatorSection = {
   title: "Being a communicator",
-  subTitle: "I am constantly practice my communication skill to build bridges between different groups/fields ",
+  display: true,
+  subTitle:
+    "I am constantly practice my communication skill to build bridges between different groups/fields ",
   skills: [
-    emoji(
-       "🌉 Science Communication"
-    ),
-    emoji(
-      "🌉 Model United Nations "
-    ),
-    emoji(
-      "🌉 German Parliament"
-    ),
-    emoji(
-      "🌉 Friend's weddings"
-    )
-  ],
-}
+    emoji("🧑‍🔬🧍 Science Communication"),
+    emoji("🇺🇳🤵 Model United Nations"),
+    emoji("🇩🇪🏛️ German parliament"),
+    emoji("🤵🤵 Friend's weddings")
+  ]
+};
 // Blogs Section
 
 const blogSection = {
