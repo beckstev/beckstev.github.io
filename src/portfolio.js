@@ -317,7 +317,7 @@ const achievementSection = {
 };
 
 const talksData = {
-  title: "Talks and Posters",
+  title: "Scientific Talks and Posters",
   subtitle: emoji("A collection of my first author contributions"),
   display: true,
   talks: [
@@ -340,7 +340,7 @@ const talksData = {
       coauthors: "Co-authors: J.H. Marines Cabello, D. Englund, and B. Stiller",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/image_Cleo_US.jpeg")
+      image: require("./assets/images/image_Cleo_US_talk.JPG")
     },
     {
       title:
@@ -403,6 +403,27 @@ const talksData = {
   ]
 };
 
+
+// Being a communicator 
+
+const communicatorSection = {
+  title: "Being a communicator",
+  subTitle: "I am constantly practice my communication skill to build bridges between different groups/fields ",
+  skills: [
+    emoji(
+       "🌉 Science Communication"
+    ),
+    emoji(
+      "🌉 Model United Nations "
+    ),
+    emoji(
+      "🌉 German Parliament"
+    ),
+    emoji(
+      "🌉 Friend's weddings"
+    )
+  ],
+}
 // Blogs Section
 
 const blogSection = {
@@ -497,6 +518,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
+  communicatorSection,
   blogSection,
   talkSection,
   podcastSection,
