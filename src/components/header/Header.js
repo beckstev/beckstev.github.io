@@ -9,9 +9,11 @@ import {
   skillsSection,
   openSource,
   blogSection,
-  talkSection,
+  talksData,
   achievementSection,
-  resumeSection
+  resumeSection,
+  bigProjects, 
+  communicatorSection
 } from "../../portfolio";
 
 function Header() {
@@ -19,9 +21,11 @@ function Header() {
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
+  const viewPapers = bigProjects.display;
+  const viewComms = communicatorSection.display;
   const viewAchievement = achievementSection.display;
   const viewBlog = blogSection.display;
-  const viewTalks = talkSection.display;
+  const viewTalks = talksData.display;
   const viewResume = resumeSection.display;
 
   return (
@@ -42,7 +46,22 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">Being a Scientist</a>
+            </li>
+          )}
+          {viewPapers && (
+            <li>
+              <a href="#papers">Papers</a>
+            </li>
+          )}
+          {viewTalks && (
+            <li>
+              <a href="#talks-carousel">Talks & Posters</a>
+            </li>
+          )}
+          {viewComms && (
+            <li>
+              <a href="#comms">Rhetorics</a>
             </li>
           )}
           {viewExperience && (
@@ -63,11 +82,6 @@ function Header() {
           {viewBlog && (
             <li>
               <a href="#blogs">Blogs</a>
-            </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks">Talks</a>
             </li>
           )}
           {viewResume && (

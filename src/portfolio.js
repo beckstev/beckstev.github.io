@@ -409,7 +409,7 @@ const communicatorSection = {
   title: "Being a communicator",
   display: true,
   subTitle:
-    "I am constantly practice my communication skill to build bridges between different groups/fields ",
+    "I constantly practice my communication skill to build bridges between different groups/fields ",
   skills: [
     emoji("🧑‍🔬🧍 Science Communication"),
     emoji("🇺🇳🤵 Model United Nations"),

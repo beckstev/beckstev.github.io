@@ -12,7 +12,7 @@ export default function Communication() {
     return null;
   }
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
+    <div className={isDark ? "dark-mode main" : "main"} id="comms">
       <div className="skills-main-div">
         <Fade left duration={1000}>
           <div className="skills-text-div">
