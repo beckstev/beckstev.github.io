@@ -46,19 +46,19 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "Being a scientist",
-  subTitle: "I harvest sound waves for photonic machine learning.",
+  subTitle: "I harvested sound waves for photonic machine learning.",
   skills: [
     emoji(
-      "⚡ Explored for the first time the interaction between light, sound, and photonic machine learning"
+      "⚡ Explored for the first time the intersection between nonlinear light-sound dynamics and photonic machine learning"
     ),
     emoji(
-      "⚡ Experientially captured the context carried by a set of light pulses using sound waves"
+      "⚡ Experimentally captured the context carried by a set of light pulses using sound waves"
     ),
     emoji(
-      "⚡ Demonstrated an-all optical nonlinear activation function mimicking the behavior of neurons"
+      "⚡ Demonstrated an all optical nonlinear activation function mimicking the behavior of neurons"
     ),
     emoji(
-      "⚡ Showcased a method to store information carried by light pulses in sound waves over ten times longer as previous status-quo"
+      "⚡ Showcased a method that stores information carried by light pulses in sound waves ten times longer as the previous status-quo"
     )
   ],
 
@@ -218,7 +218,7 @@ const bigProjects = {
     "This would not have been possible without all the people supporting me - thank you 🤗",
   projects: [
     {
-      image: require("./assets/images/nla_image_square.png"),
+      image: require("./assets/images/paper_images/nla_image_square.png"),
       projectName: "Optoacoustic activation function",
       projectDesc: "Nonlinear signal processing leveraging sound waves",
       footerLink: [
@@ -229,7 +229,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/oreo_concept_with_copyright.png"),
+      image: require("./assets/images/paper_images/oreo_concept_with_copyright.png"),
       projectName: "Optoacoustic Recurrent Operator",
       projectDesc: "Processing context with sound waves",
       footerLink: [
@@ -241,13 +241,13 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/cold_memory_image.png"),
+      image: require("./assets/images/paper_images/cold_memory_image.png"),
       projectName: "Photonic RAM in long-lasting sound waves",
       projectDesc: "Storing optical information in sound waves",
       footerLink: [
         {
           name: "See article",
-          url: "https://arxiv.org/abs/2311.06219"
+          url: "https://pubs.acs.org/doi/10.1021/acsphotonics.4c00478?goto=supporting-info"
         }
       ]
     }
@@ -330,7 +330,7 @@ const talksData = {
         "📍 WE-Heraeus-Seminar Photonics for Information Processing, Germany (2024)",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/image_hereaus.jpg")
+      image: require("./assets/images/talk_images/image_hereaus.jpg")
     },
     {
       title:
@@ -340,7 +340,7 @@ const talksData = {
       coauthors: "Co-authors: J.H. Marines Cabello, D. Englund, and B. Stiller",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/image_Cleo_US_talk.JPG")
+      image: require("./assets/images/talk_images/image_Cleo_US_talk.JPG")
     },
     {
       title:
@@ -350,7 +350,7 @@ const talksData = {
       coauthors: "Co-authors: A. Geilen∗, and B. Stiller",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/image_SPIE_photonics.jpg")
+      image: require("./assets/images/talk_images/image_SPIE_photonics.jpg")
     },
     {
       title: "Optoacoustic recurrent operator",
@@ -359,7 +359,7 @@ const talksData = {
       coauthors: "Co-authors: D. Englund, and B. Stiller",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/image_SPIE_photonics_2.jpg")
+      image: require("./assets/images/talk_images/image_SPIE_photonics_2.jpg")
     },
     {
       title: "Optoacoustic recurrent operator",
@@ -387,7 +387,7 @@ const talksData = {
       coauthors: "Co-authors: D. Englund, and B. Stiller",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/image_fronties_in_neuromoprhic_computing.jpg")
+      image: require("./assets/images/talk_images/image_fronties_in_neuromoprhic_computing.jpg")
     },
     {
       title:
@@ -397,7 +397,7 @@ const talksData = {
       coauthors: "Co-authors: J. Storp, and B. Stiller",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/image_CLEO_europe.jpg")
+      image: require("./assets/images/talk_images/image_CLEO_europe.jpg")
     }
     // Add more talks objects here
   ]
@@ -418,6 +418,52 @@ const communicatorSection = {
   ]
 };
 // Blogs Section
+
+
+const commsData = {
+  title: "Highlights",
+  subtitle: emoji("A collection of events where I practiced public speaking and rhetorics."),
+  display: true,
+  talks: [
+    {
+      title:
+        "Havard WorldMUN Conference",
+      description: "Represented South Africa in DISEC",
+      location:
+        "📍 Taipei, Taiwan (2024)",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/comm_images/DISEC D3-17_cutted.jpg")
+    },
+    {
+      title:
+        "LIMUN Conference",
+      description: "Represented Island in UNEP",
+      location: "📍 London, UK (2024)",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/comm_images/LIMUN_image_cutted.jpg")
+    },
+    {
+      title:
+        "Lange Nacht der Wissenschaft",
+      description: "Public outreach talk about how to obtain a PhD",
+      location: "📍 Erlangen, Germany (2021)",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/comm_images/lange_nacht_der_wissenschaft_220521.jpg")
+    },
+    {
+      title: "Gemeinsam Box",
+      description: "Introducting the GemeinsamBox a mental health start kit during the general assembly of the young German Physicist Society (jDPG)",
+      location: "📍 Frankfuert am Main, Germany (2024)",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/comm_images/jdpg_mv_2022_cutted.jpg")
+    },
+  ]
+};
+
 
 const blogSection = {
   title: "Blogs",
@@ -454,7 +500,7 @@ const talkSection = {
       subtitle: "Codelab at GDG DevFest Karachi 2019",
       slides_url: "",
       event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/cold_memory_image.png")
+      image: require("./assets/images/paper_images/cold_memory_image.png")
     }
   ],
   display: false // Set false to hide this section, defaults to true
@@ -519,5 +565,6 @@ export {
   twitterDetails,
   isHireable,
   resumeSection,
-  talksData
+  talksData,
+  commsData
 };

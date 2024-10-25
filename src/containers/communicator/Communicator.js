@@ -18,9 +18,10 @@ export default function Communication() {
           <div className="skills-text-div">
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
+              style={{ lineHeight: "1.2em" }}
             >
               {communicatorSection.title}
-              {"  "}
+              {" "}
             </h1>
             <p
               className={
@@ -56,7 +57,7 @@ export default function Communication() {
             ) : (
               <img
                 alt="Steven discussing"
-                src={require("../../assets/images/jdpg_mv_discussion.jpeg")}
+                src={require("../../assets/images/comm_images/jdpg_mv_discussion.jpeg")}
               />
             )}
           </div>

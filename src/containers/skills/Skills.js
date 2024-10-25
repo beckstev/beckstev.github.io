@@ -1,6 +1,5 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
-import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
@@ -21,7 +20,7 @@ export default function Skills() {
               <DisplayLottie animationData={codingPerson} />
             ) : (
               <img
-                alt="Man Working"
+                alt="Steven Becker in the lab"
                 src={require("../../assets/images/lab_image.jpg")}
               ></img>
             )}

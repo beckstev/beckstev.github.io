@@ -38,6 +38,7 @@
   color: $subTitle;
 }
 
+
 .header li a {
   display: block;
   padding: 15px 20px;
@@ -66,6 +67,12 @@
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
+  padding-left: 0;
+}
+
+.header .logo-bar {
+  font-weight: bold;
+  
 }
 
 /* menu */
