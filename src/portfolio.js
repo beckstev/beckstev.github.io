@@ -22,7 +22,7 @@ const illustration = {
 const greeting = {
   username: "beckstev",
   title: "Moin, I am Steven",
-  subTitle: emoji("A PhD student in photonic machine learning."),
+  subTitle: emoji("A researcher in photonic machine learning."),
   resumeLink: "", // Set to empty to hide the button; https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -49,7 +49,7 @@ const skillsSection = {
   subTitle: "I harvested sound waves for photonic machine learning.",
   skills: [
     emoji(
-      "⚡ Explored for the first time the intersection between nonlinear light-sound dynamics and photonic machine learning"
+      "⚡ Explored for the first time the intersection between nonlinear light-sound dynamics and photonic neuromorphic computing"
     ),
     emoji(
       "⚡ Experimentally captured the context carried by a set of light pulses using sound waves"
@@ -59,6 +59,9 @@ const skillsSection = {
     ),
     emoji(
       "⚡ Showcased a method that stores information carried by light pulses in sound waves ten times longer as the previous status-quo"
+    ),
+    emoji(
+      "⚡  Co-lead and organized the first ”Photonic Machine Learning” seminar at FAU Erlangen-Nuremberg"
     )
   ],
 
@@ -218,13 +221,13 @@ const bigProjects = {
     "This would not have been possible without all the people supporting me - thank you 🤗",
   projects: [
     {
-      image: require("./assets/images/paper_images/nla_image_square.png"),
+      image: require("./assets/images/paper_images/NLA_cover_image.jpg"),
       projectName: "Optoacoustic activation function",
       projectDesc: "Nonlinear signal processing leveraging sound waves",
       footerLink: [
         {
           name: "See article",
-          url: "https://arxiv.org/abs/2401.05135"
+          url: "https://www.degruyter.com/document/doi/10.1515/nanoph-2024-0513/html"
         }
       ]
     },
@@ -241,7 +244,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/paper_images/cold_memory_image.png"),
+      image: require("./assets/images/paper_images/memory_cover_image.jpg"),
       projectName: "Photonic RAM in long-lasting sound waves",
       projectDesc: "Storing optical information in sound waves",
       footerLink: [
@@ -368,7 +371,7 @@ const talksData = {
       coauthors: "Co-authors: D. Englund, and B. Stiller",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/no_image_available.png")
+      image: require("./assets/images/me_presenting_funny.png")
     },
     {
       title:
@@ -378,7 +381,7 @@ const talksData = {
       coauthors: "Co-authors: A. Geilen, and B. Stiller",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/no_image_available.png")
+      image: require("./assets/images/me_presenting_funny.png")
     },
     {
       title: "Optoacoustic recurrent operator",
