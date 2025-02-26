@@ -422,25 +422,23 @@ const communicatorSection = {
 };
 // Blogs Section
 
-
 const commsData = {
   title: "Highlights",
-  subtitle: emoji("A collection of events where I practiced public speaking and rhetorics."),
+  subtitle: emoji(
+    "A collection of events where I practiced public speaking and rhetorics."
+  ),
   display: true,
   talks: [
     {
-      title:
-        "Havard WorldMUN Conference",
+      title: "Havard WorldMUN Conference",
       description: "Represented South Africa in DISEC",
-      location:
-        "📍 Taipei, Taiwan (2024)",
+      location: "📍 Taipei, Taiwan (2024)",
       slides_url: "",
       event_url: "",
       image: require("./assets/images/comm_images/DISEC D3-17_cutted.jpg")
     },
     {
-      title:
-        "LIMUN Conference",
+      title: "LIMUN Conference",
       description: "Represented Island in UNEP",
       location: "📍 London, UK (2024)",
       slides_url: "",
@@ -448,8 +446,7 @@ const commsData = {
       image: require("./assets/images/comm_images/LIMUN_image_cutted.jpg")
     },
     {
-      title:
-        "Lange Nacht der Wissenschaft",
+      title: "Lange Nacht der Wissenschaft",
       description: "Public outreach talk about how to obtain a PhD",
       location: "📍 Erlangen, Germany (2021)",
       slides_url: "",
@@ -458,15 +455,15 @@ const commsData = {
     },
     {
       title: "Gemeinsam Box",
-      description: "Introducting the GemeinsamBox a mental health start kit during the general assembly of the young German Physicist Society (jDPG)",
+      description:
+        "Introducting the GemeinsamBox a mental health start kit during the general assembly of the young German Physicist Society (jDPG)",
       location: "📍 Frankfuert am Main, Germany (2024)",
       slides_url: "",
       event_url: "",
       image: require("./assets/images/comm_images/jdpg_mv_2022_cutted.jpg")
-    },
+    }
   ]
 };
-
 
 const blogSection = {
   title: "Blogs",
