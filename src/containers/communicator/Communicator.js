@@ -18,10 +18,9 @@ export default function Communication() {
           <div className="skills-text-div">
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-              style={{ lineHeight: "1.2em" }}
+              style={{lineHeight: "1.2em"}}
             >
-              {communicatorSection.title}
-              {" "}
+              {communicatorSection.title}{" "}
             </h1>
             <p
               className={

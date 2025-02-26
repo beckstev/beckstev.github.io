@@ -12,7 +12,7 @@ import {
   talksData,
   achievementSection,
   resumeSection,
-  bigProjects, 
+  bigProjects,
   communicatorSection
 } from "../../portfolio";
 
@@ -33,7 +33,7 @@ function Header() {
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
           <span className="logo-bar"> &#124;</span>
-          <span className="logo-name">{greeting.username}&rang; </span> 
+          <span className="logo-name">{greeting.username}&rang; </span>
         </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
