@@ -1,9 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7968f5cc.css",
-    "main.js": "/static/js/main.7707dd4a.js",
-    "static/css/990.c6a7ee28.chunk.css": "/static/css/990.c6a7ee28.chunk.css",
-    "static/js/990.115b5b98.chunk.js": "/static/js/990.115b5b98.chunk.js",
+    "main.css": "/static/css/main.0722d176.css",
+    "main.js": "/static/js/main.350a98ca.js",
     "static/media/DISEC D3-17_cutted.jpg": "/static/media/DISEC D3-17_cutted.ca5447df08d7996ce32d.jpg",
     "static/media/lange_nacht_der_wissenschaft_220521.jpg": "/static/media/lange_nacht_der_wissenschaft_220521.c6879c211deb81bb9bb7.jpg",
     "static/media/be-boosted_logo_white.png": "/static/media/be-boosted_logo_white.4302903304a740e68d74.png",
@@ -19,7 +17,6 @@
     "static/media/coffee_chat_invite.png": "/static/media/coffee_chat_invite.f10f4e0338c95981a57f.png",
     "static/media/image_CLEO_europe.jpg": "/static/media/image_CLEO_europe.36a16d63af7dd1e3a8f3.jpg",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/cold_memory_image.png": "/static/media/cold_memory_image.90727a84b5b5c9636335.png",
     "static/media/LNLM-Logo-Komplett-Schwarz-neu-scaled.jpg": "/static/media/LNLM-Logo-Komplett-Schwarz-neu-scaled.89d4fd8de4d9da4ef6c4.jpg",
     "static/media/image_SPIE_photonics_2.jpg": "/static/media/image_SPIE_photonics_2.510c9114f516f9bc4965.jpg",
     "static/media/image_SPIE_photonics.jpg": "/static/media/image_SPIE_photonics.17a4da75db6edfee11b2.jpg",
@@ -34,17 +31,11 @@
     "static/media/pep_logo_white.png": "/static/media/pep_logo_white.3aa9bdc3bc55ad2555ba.png",
     "static/media/be_boosted_black.png": "/static/media/be_boosted_black.8fba7bf1fae32bd4cec1.png",
     "static/media/Studienstiftung_Logo_weiss.png": "/static/media/Studienstiftung_Logo_weiss.5a6415394e2de38239dc.png",
-    "static/media/quoraLogo.png": "/static/media/quoraLogo.85eb29f4d52320c8ed99.png",
-    "static/media/airbnbLogo.png": "/static/media/airbnbLogo.e8497507db673acd3991.png",
     "static/media/Logo-Deutschlandstipendium-1.jpg": "/static/media/Logo-Deutschlandstipendium-1.02036050c1facab3fdb8.jpg",
-    "static/media/facebookLogo.png": "/static/media/facebookLogo.f46d68b24e9b4f73ee8b.png",
     "static/media/Elitenetzwerk_Bavaria.png": "/static/media/Elitenetzwerk_Bavaria.641ff5a9e5aab83d73fb.png",
     "index.html": "/index.html",
-    "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.7968f5cc.css.map": "/static/css/main.7968f5cc.css.map",
-    "main.7707dd4a.js.map": "/static/js/main.7707dd4a.js.map",
-    "990.c6a7ee28.chunk.css.map": "/static/css/990.c6a7ee28.chunk.css.map",
-    "990.115b5b98.chunk.js.map": "/static/js/990.115b5b98.chunk.js.map"
+    "main.0722d176.css.map": "/static/css/main.0722d176.css.map",
+    "main.350a98ca.js.map": "/static/js/main.350a98ca.js.map"
   },
-  "entrypoints": ["static/css/main.7968f5cc.css", "static/js/main.7707dd4a.js"]
+  "entrypoints": ["static/css/main.0722d176.css", "static/js/main.350a98ca.js"]
 }
