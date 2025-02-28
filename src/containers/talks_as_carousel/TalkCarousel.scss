@@ -5,13 +5,23 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
-  position: center;
 }
 
-.talks-title {
-  margin-bottom: 2rem;
+.talk-header-title {
+  margin-bottom: 1rem;
   color: $titleColor;
   font-size: 2.5rem;
+  text-align: center;
+  width: 80%;
+}
+
+/* Mobile adjustments for the header title */
+@media (max-width: 768px) {
+  .talk-header-title {
+    width: 100% !important;
+    font-size: 2rem !important;
+    padding: 0 1rem !important;
+  }
 }
 
 .talks-container {
@@ -25,14 +35,36 @@
 }
 
 .talk-card {
-  flex: 0 0 30%; // Each card takes up about 30% of the container width
+  flex: 0 0 30%;
   transition: opacity 0.5s ease, transform 0.5s ease;
   text-align: center;
   margin: 0 1rem;
-  opacity: 0; // Default to fully hidden
-  transform: scale(1); // Default scale
-  display: none; // Default to not displayed
+  opacity: 0;
+  transform: scale(1);
+  display: none;
 }
+
+/* Mobile adjustments for carousel cards */
+@media (max-width: 768px) {
+  .talk-header-title {
+    width: 100% !important;
+    font-size: 2rem !important;
+    padding: 0 1rem !important;
+  }
+  .talks-container {
+    width: 100% !important;
+    margin: 0;
+    padding: 0;
+  }
+  .talk-card {
+    flex: 0 0 100%; /* Take up the full container width */
+    margin: 0 auto;
+  }
+  .talk-details {
+    width: 100% !important; /* Force full width */
+  }
+}
+
 
 .talk-image {
   margin-bottom: 1rem;
@@ -41,6 +73,7 @@
 
 .card-image {
   width: 100%;
+  max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
@@ -56,33 +89,65 @@
   color: $textColor;
 }
 
+/* Default (desktop) navigation buttons */
 .slide-button {
   background-color: $buttonColor;
   border: none;
   color: white;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
-  margin: 1rem;
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s ease;
   position: absolute;
   top: 50%;
+  width: 60px;
+  height: 60px;
   transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &.prev {
     left: 10px;
   }
-
   &.next {
     right: 10px;
   }
-
   &:hover {
     background-color: $buttonColor;
   }
+  .arrow {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
+
+/* Mobile-specific overrides for navigation buttons */
+@media (max-width: 768px) {
+  .slide-button {
+    background: transparent !important;
+    border: none !important;
+    top: 230px !important;
+    height: 60% !important;
+    width: 10% !important;
+    transform: none !important;
+    padding: 0 !important;
+  }
+  .slide-button.prev {
+    left: 0 !important;
+  }
+  .slide-button.next {
+    right: 0 !important;
+  }
+  .slide-button .arrow {
+    display: none !important;
+  }
+}
+
+/* Dark mode override */
 .dark-mode {
   background-color: $darkBackground;
   color: $textColorDark;

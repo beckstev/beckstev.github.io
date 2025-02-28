@@ -70,7 +70,6 @@ https://fontawesome.com/icons?d=gallery */
   display: true // Set false to hide this section, defaults to true
 };
 
-
 // Work experience section
 
 const workExperiences = {
@@ -79,7 +78,7 @@ const workExperiences = {
     {
       role: "Software Engineer",
       company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("."),
       date: "June 2018 – Present",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
@@ -90,14 +89,14 @@ const workExperiences = {
     {
       role: "Front-End Developer",
       company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      companylogo: require("."),
       date: "May 2017 – May 2018",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
       role: "Software Engineer Intern",
       company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
+      companylogo: require("."),
       date: "Jan 2015 – Sep 2015",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
@@ -156,8 +155,7 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Honors  🏆 "),
-  subtitle:
-    "Thanks to all the institutions who have supported me!",
+  subtitle: "Thanks to all the institutions who have supported me!",
 
   achievementsCards: [
     {
@@ -165,17 +163,17 @@ const achievementSection = {
       subtitle:
         "Fully funded position in an office of a member of the German Bundestag",
       image_bright: require("./assets/images/honors/WH_logo.png"),
-      imageAlt: "Logo of the Wilhelm und Else Heraeus FoundationFully funded position in the office of the German Bundestag",
-      footerLink: [
-      ]
+      imageAlt:
+        "Logo of the Wilhelm und Else Heraeus FoundationFully funded position in the office of the German Bundestag",
+      footerLink: []
     },
     {
       title: "Invitation as Young Scientist - 73rd LNLM",
-      subtitle: "Lindau Young Scientists represent the next generation of leading scientists and researchers",
+      subtitle:
+        "Lindau Young Scientists represent the next generation of leading scientists and researchers",
       image_bright: require("./assets/images/honors/LNLM-Logo-Komplett-Schwarz-neu-scaled.jpg"),
       imageAlt: "Logo of the LNLM ",
-      footerLink: [
-      ]
+      footerLink: []
     },
     {
       title: "PhD Scholarship ",
@@ -184,33 +182,32 @@ const achievementSection = {
       image_bright: require("./assets/images/honors/Studienstiftung_Logo_RGB.jpg"),
       image_dark: require("./assets/images/honors/Studienstiftung_Logo_weiss.png"),
       imageAlt: "Logo of the Studienstiftung",
-      footerLink: [
-      ]
-    }, 
+      footerLink: []
+    },
     {
       title: "Marianne-Plehn-Programm",
-      subtitle: "Financial support for outstanding young scientific talent in Bavaria",
+      subtitle:
+        "Financial support for outstanding young scientific talent in Bavaria",
       image_bright: require("./assets/images/honors/Elitenetzwerk_Bavaria.png"),
       imageAlt: "Logo of the Elitenetzwerk_Bavaria ",
-      footerLink: [
-      ]
+      footerLink: []
     },
     {
       title: "Rhetoric and MUN Fellowship",
-      subtitle: "Extended rhetorics training and financial support to participate at two international Model United Nations conferences (LIMUN & WorldMUN)",
+      subtitle:
+        "Extended rhetorics training and financial support to participate at two international Model United Nations conferences (LIMUN & WorldMUN)",
       image_bright: require("./assets/images/honors/be_boosted_black.png"),
-      image_bright: require("./assets/images/honors/be-boosted_logo_white.png"),
+      image_dark: require("./assets/images/honors/be-boosted_logo_white.png"),
       imageAlt: "Logo of the be.boosted",
-      footerLink: [
-      ]
-    }, 
+      footerLink: []
+    },
     {
       title: "Master's Scholarship",
-      subtitle: "Funding for master's study & research experience through a research position",
+      subtitle:
+        "Funding for master's study & research experience through a research position",
       image_bright: require("./assets/images/honors/Logo_HELLA_neu.png"),
       imageAlt: "Logo of the Hella GmbH & Co. KGaA",
-      footerLink: [
-      ]
+      footerLink: []
     },
     {
       title: "Going Abroad Scholarship",
@@ -218,16 +215,15 @@ const achievementSection = {
       image_bright: require("./assets/images/honors/pep_logo.png"),
       image_dark: require("./assets/images/honors/pep_logo_white.png"),
       imageAlt: "Logo of the PeP et Al",
-      footerLink: [
-      ]
+      footerLink: []
     },
     {
       title: "Germany Scholarship",
-      subtitle: "Fellowship provides financial and networking support for young talented students",
+      subtitle:
+        "Fellowship provides financial and networking support for young talented students",
       image_bright: require("./assets/images/honors/Logo-Deutschlandstipendium-1.jpg"),
       imageAlt: "Logo of the Deutschlandstipendium",
-      footerLink: [
-      ]
+      footerLink: []
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -285,7 +281,7 @@ const talksData = {
       coauthors: "Co-authors: D. Englund, and B. Stiller",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/me_presenting_funny.png")
+      image: require("./assets/images/talk_images/me_presenting_funny.png")
     },
     {
       title:
@@ -295,7 +291,7 @@ const talksData = {
       coauthors: "Co-authors: A. Geilen, and B. Stiller",
       slides_url: "",
       event_url: "",
-      image: require("./assets/images/me_presenting_funny.png")
+      image: require("./assets/images/talk_images/me_presenting_funny.png")
     },
     {
       title: "Optoacoustic recurrent operator",
@@ -334,7 +330,6 @@ const communicatorSection = {
     emoji("🤵🤵 Friend's weddings")
   ]
 };
-// Blogs Section
 
 const commsData = {
   title: "Highlights",
@@ -379,46 +374,6 @@ const commsData = {
   ]
 };
 
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
-    {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
-    },
-    {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
-// Talks Sections
-
-const talkSection = {
-  title: "Talks and Posters",
-  subtitle: emoji("A collection of my first author contributions"),
-
-  talks: [
-    {
-      title:
-        "High-speed coherent photonic random access memory in long-lasting sound waves",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "",
-      event_url: "https://www.facebook.com/events/2339906106275053/",
-      image: require("./assets/images/paper_images/cold_memory_image.png")
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
 
 // Podcast Section
 
@@ -468,14 +423,12 @@ export {
   workExperiences,
   bigProjects,
   communicatorSection,
-  blogSection,
-  talkSection,
   podcastSection,
   contactInfo,
   twitterDetails,
   isHireable,
   resumeSection,
-  talksData,  
+  talksData,
   achievementSection,
   commsData
 };

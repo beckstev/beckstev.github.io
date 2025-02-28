@@ -1,17 +1,10 @@
-import React, {useState, useEffect, lazy, Suspense} from "react";
+import React, {useState, useEffect} from "react";
 import Contact from "../contact/Contact";
-import Loading from "../loading/Loading";
-
-const renderLoader = () => <Loading />;
-const GithubProfileCard = lazy(() =>
-  import("../../components/githubProfileCard/GithubProfileCard")
-);
 export default function Profile() {
-  const [prof, setrepo] = useState([]);
+  const [, setrepo] = useState([]);
   function setProfileFunction(array) {
     setrepo(array);
   }
-
   useEffect(() => {
     const getProfileData = () => {
       fetch("/profile.json")
@@ -31,8 +24,8 @@ export default function Profile() {
           setProfileFunction("Error");
         });
     };
-  
+
     getProfileData();
   }, []);
-  return <Contact />
+  return <Contact />;
 }

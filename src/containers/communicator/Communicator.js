@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import "./Communicator.scss";
-import {illustration, communicatorSection} from "../../portfolio";
+import  {communicatorSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -49,7 +49,8 @@ export default function Communication() {
         </Fade>
         <Fade right duration={1000}>
           <div className="communicator-image-div">
-            {<img
+            {
+              <img
                 alt="Steven discussing"
                 src={require("../../assets/images/comm_images/jdpg_mv_discussion.jpeg")}
               />

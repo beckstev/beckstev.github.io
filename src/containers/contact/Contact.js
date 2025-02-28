@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import {illustration, contactInfo} from "../../portfolio";
+import {contactInfo} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -52,7 +52,7 @@ export default function Contact() {
           </div>
           <div className="contact-image-div">
             {
-             <img
+              <img
                 alt="Lets have a coffee chat"
                 src={require("../../assets/images/coffee_chat_invite.png")}
               ></img>

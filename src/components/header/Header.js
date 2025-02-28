@@ -7,7 +7,6 @@ import {
   greeting,
   workExperiences,
   skillsSection,
-  blogSection,
   talksData,
   achievementSection,
   resumeSection,
@@ -22,7 +21,6 @@ function Header() {
   const viewPapers = bigProjects.display;
   const viewComms = communicatorSection.display;
   const viewAchievement = achievementSection.display;
-  const viewBlog = blogSection.display;
   const viewTalks = talksData.display;
   const viewResume = resumeSection.display;
 
@@ -59,7 +57,7 @@ function Header() {
           )}
           {viewComms && (
             <li>
-              <a href="#comms">Rhetorics</a>
+              <a href="#comms">Being a Communicator</a>
             </li>
           )}
           {viewExperience && (
@@ -67,19 +65,14 @@ function Header() {
               <a href="#experience">Work Experiences</a>
             </li>
           )}
-          {viewBlog && (
-            <li>
-              <a href="#blogs">Blogs</a>
-            </li>
-          )}
           {viewResume && (
             <li>
               <a href="#resume">Resume</a>
             </li>
           )}
-           {viewAchievement && (
+          {viewAchievement && (
             <li>
-              <a href="#achievements">Achievements</a>
+              <a href="#achievements">Honors</a>
             </li>
           )}
           <li>

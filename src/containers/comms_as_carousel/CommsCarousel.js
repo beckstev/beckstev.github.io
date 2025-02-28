@@ -7,7 +7,7 @@ import {commsData} from "../../portfolio";
 export default function TalksCarousel() {
   const {isDark} = useContext(StyleContext);
   const [currentSlide, setCurrentSlide] = useState(1);
-  const [autoplay, setAutoplay] = useState(false);
+  const [autoplay] = useState(false);
 
   const handleNextSlide = () => {
     setCurrentSlide(prevSlide => (prevSlide + 1) % commsData.talks.length);
@@ -97,14 +97,16 @@ export default function TalksCarousel() {
         <button
           className={`slide-button prev ${isDark ? "dark-mode" : ""}`}
           onClick={handlePrevSlide}
+          aria-label="Previous Slide"
         >
-          Previous
+          <span className="arrow">&#8592;</span>
         </button>
         <button
           className={`slide-button next ${isDark ? "dark-mode" : ""}`}
           onClick={handleNextSlide}
+          aria-label="Next Slide"
         >
-          Next
+          <span className="arrow">&#8594;</span>
         </button>
       </div>
     </Fade>

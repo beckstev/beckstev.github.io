@@ -61,13 +61,15 @@
   border: none;
   color: white;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 50rem;
   margin: 1rem;
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s ease;
   position: absolute;
   top: 50%;
+  width: 60px; // Set a fixed width
+  height: 60px; // Set a fixed height
   transform: translateY(-50%);
 
   &.prev {
@@ -80,6 +82,12 @@
 
   &:hover {
     background-color: $buttonColor;
+  }
+  .arrow {
+    font-size: 2rem; // Increase arrow size
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 

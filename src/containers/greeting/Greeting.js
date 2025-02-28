@@ -4,7 +4,7 @@ import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import {illustration, greeting} from "../../portfolio";
+import {greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
@@ -43,10 +43,10 @@ export default function Greeting() {
           </div>
           <div className="greeting-image-div">
             {
-              <img
-                alt="Profil picture Steven Becker"
-                src={require("../../assets/images/profile_picutre_webapge-circle_rescalded.png")}
-              ></img>
+             <img
+             src={require("../../assets/images/profile_picutre_webapge-circle_rescalded.png")}
+             alt="Steven Becker"
+           />
             }
           </div>
         </div>
