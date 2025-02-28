@@ -64,113 +64,12 @@ const skillsSection = {
       "⚡  Co-lead and organized the first ”Photonic Machine Learning” seminar at FAU Erlangen-Nuremberg"
     )
   ],
-
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
-
   softwareSkills: [],
-  //{
-  //  skillName: "html-5",
-  //  fontAwesomeClassname: "fab fa-html5"
-  //},
-  //{
-  //  skillName: "css3",
-  //  fontAwesomeClassname: "fab fa-css3-alt"
-  //},
-  //{
-  //  skillName: "sass",
-  //  fontAwesomeClassname: "fab fa-sass"
-  //},
-  //{
-  //  skillName: "JavaScript",
-  //  fontAwesomeClassname: "fab fa-js"
-  //},
-  //{
-  //  skillName: "reactjs",
-  //  fontAwesomeClassname: "fab fa-react"
-  //},
-  //{
-  //  skillName: "nodejs",
-  //  fontAwesomeClassname: "fab fa-node"
-  //},
-  //{
-  //  skillName: "swift",
-  //  fontAwesomeClassname: "fab fa-swift"
-  //},
-  //{
-  //  skillName: "npm",
-  //  fontAwesomeClassname: "fab fa-npm"
-  //},
-  //{
-  //  skillName: "sql-database",
-  //  fontAwesomeClassname: "fas fa-database"
-  //},
-  //{
-  //  skillName: "aws",
-  //  fontAwesomeClassname: "fab fa-aws"
-  //},
-  //{
-  //  skillName: "firebase",
-  //  fontAwesomeClassname: "fas fa-fire"
-  //},
-  //{
-  //  skillName: "python",
-  //  fontAwesomeClassname: "fab fa-python"
-  //},
-  //{
-  //  skillName: "docker",
-  //  fontAwesomeClassname: "fab fa-docker"
-  //}
   display: true // Set false to hide this section, defaults to true
 };
 
-// Education Section
-
-const educationInfo = {
-  display: false, // Set false to hide this section, defaults to true
-  schools: [
-    {
-      schoolName: "Max Planck Institute for the Science of Light",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "PhD in Physics",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
-    }
-  ]
-};
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: false, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
 
 // Work experience section
 
@@ -207,12 +106,6 @@ const workExperiences = {
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: false // Set false to hide this section, defaults to true
-};
-
 // Some big projects you have worked on
 
 const bigProjects = {
@@ -262,61 +155,82 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("Honors  🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Thanks to all the institutions who have supported me!",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Science Meets Politics Scholarship",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Fully funded position in an office of a member of the German Bundestag",
+      image_bright: require("./assets/images/honors/WH_logo.png"),
+      imageAlt: "Logo of the Wilhelm und Else Heraeus FoundationFully funded position in the office of the German Bundestag",
       footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
       ]
     },
     {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+      title: "Invitation as Young Scientist - 73rd LNLM",
+      subtitle: "Lindau Young Scientists represent the next generation of leading scientists and researchers",
+      image_bright: require("./assets/images/honors/LNLM-Logo-Komplett-Schwarz-neu-scaled.jpg"),
+      imageAlt: "Logo of the LNLM ",
       footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
       ]
     },
-
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "PhD Scholarship ",
+      subtitle:
+        "Financial and individual support for individuals with outstanding scientific abilities and a strong sense of social responsibility",
+      image_bright: require("./assets/images/honors/Studienstiftung_Logo_RGB.jpg"),
+      image_dark: require("./assets/images/honors/Studienstiftung_Logo_weiss.png"),
+      imageAlt: "Logo of the Studienstiftung",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+      ]
+    }, 
+    {
+      title: "Marianne-Plehn-Programm",
+      subtitle: "Financial support for outstanding young scientific talent in Bavaria",
+      image_bright: require("./assets/images/honors/Elitenetzwerk_Bavaria.png"),
+      imageAlt: "Logo of the Elitenetzwerk_Bavaria ",
+      footerLink: [
+      ]
+    },
+    {
+      title: "Rhetoric and MUN Fellowship",
+      subtitle: "Extended rhetorics training and financial support to participate at two international Model United Nations conferences (LIMUN & WorldMUN)",
+      image_bright: require("./assets/images/honors/be_boosted_black.png"),
+      image_bright: require("./assets/images/honors/be-boosted_logo_white.png"),
+      imageAlt: "Logo of the be.boosted",
+      footerLink: [
+      ]
+    }, 
+    {
+      title: "Master's Scholarship",
+      subtitle: "Funding for master's study & research experience through a research position",
+      image_bright: require("./assets/images/honors/Logo_HELLA_neu.png"),
+      imageAlt: "Logo of the Hella GmbH & Co. KGaA",
+      footerLink: [
+      ]
+    },
+    {
+      title: "Going Abroad Scholarship",
+      subtitle: "Fully funded research scholarship at Purdue University, USA",
+      image_bright: require("./assets/images/honors/pep_logo.png"),
+      image_dark: require("./assets/images/honors/pep_logo_white.png"),
+      imageAlt: "Logo of the PeP et Al",
+      footerLink: [
+      ]
+    },
+    {
+      title: "Germany Scholarship",
+      subtitle: "Fellowship provides financial and networking support for young talented students",
+      image_bright: require("./assets/images/honors/Logo-Deutschlandstipendium-1.jpg"),
+      imageAlt: "Logo of the Deutschlandstipendium",
+      footerLink: [
       ]
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 const talksData = {
@@ -551,12 +465,8 @@ export {
   socialMediaLinks,
   splashScreen,
   skillsSection,
-  educationInfo,
-  techStack,
   workExperiences,
-  openSource,
   bigProjects,
-  achievementSection,
   communicatorSection,
   blogSection,
   talkSection,
@@ -565,6 +475,7 @@ export {
   twitterDetails,
   isHireable,
   resumeSection,
-  talksData,
+  talksData,  
+  achievementSection,
   commsData
 };

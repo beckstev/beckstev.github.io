@@ -2,8 +2,6 @@ import React, {useContext} from "react";
 import "./Communicator.scss";
 import {illustration, communicatorSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import codingPerson from "../../assets/lottie/codingPerson";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Communication() {
@@ -51,14 +49,11 @@ export default function Communication() {
         </Fade>
         <Fade right duration={1000}>
           <div className="communicator-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : (
-              <img
+            {<img
                 alt="Steven discussing"
                 src={require("../../assets/images/comm_images/jdpg_mv_discussion.jpeg")}
               />
-            )}
+            }
           </div>
         </Fade>
       </div>
