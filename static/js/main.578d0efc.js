@@ -1,4 +1,4 @@
-/*! For license information please see main.350a98ca.js.LICENSE.txt */
+/*! For license information please see main.578d0efc.js.LICENSE.txt */
 (() => {
   var __webpack_modules__ = {
       160: (e, t, r) => {
@@ -28807,12 +28807,12 @@
             projects: [
               {
                 image: r(1052),
-                projectName: "Optoacoustic activation function",
+                projectName: "Optoacoustic Activation Function",
                 projectDesc:
                   "Nonlinear signal processing leveraging sound waves",
                 footerLink: [
                   {
-                    name: "See article",
+                    name: "See Article",
                     url: "https://www.degruyter.com/document/doi/10.1515/nanoph-2024-0513/html"
                   }
                 ]
@@ -28823,18 +28823,18 @@
                 projectDesc: "Processing context with sound waves",
                 footerLink: [
                   {
-                    name: "See article",
+                    name: "See Article",
                     url: "https://www.nature.com/articles/s41467-024-47053-6"
                   }
                 ]
               },
               {
                 image: r(1210),
-                projectName: "Photonic RAM in long-lasting sound waves",
+                projectName: "Photonic RAM in long-lasting Sound Waves",
                 projectDesc: "Storing optical information in sound waves",
                 footerLink: [
                   {
-                    name: "See article",
+                    name: "See Article",
                     url: "https://pubs.acs.org/doi/10.1021/acsphotonics.4c00478?goto=supporting-info"
                   }
                 ]
@@ -31449,19 +31449,29 @@
           const {isDark: e} = (0, n.useContext)(c),
             [t, r] = (0, n.useState)(1),
             [i] = (0, n.useState)(!1),
-            a = () => {
-              r(e => (e + 1) % E.talks.length);
+            [a, s] = (0, n.useState)(window.innerWidth < 768);
+          (0, n.useEffect)(() => {
+            const e = () => {
+              s(window.innerWidth < 768);
             };
+            return (
+              window.addEventListener("resize", e),
+              () => window.removeEventListener("resize", e)
+            );
+          }, []);
+          const o = () => {
+            r(e => (e + 1) % E.talks.length);
+          };
           (0, n.useEffect)(() => {
             if (i) {
               const e = setInterval(() => {
-                a();
+                o();
               }, 5e3);
               return () => clearInterval(e);
             }
           }, [i]);
-          const s = e =>
-            window.innerWidth < 768
+          const l = e =>
+            a
               ? e === t
                 ? 1
                 : 0
@@ -31502,9 +31512,10 @@
                       {
                         className: "talk-card " + (e ? "dark-mode" : ""),
                         style: {
-                          opacity: s(n),
+                          opacity: l(n),
                           transform: n === t ? "scale(1)" : "scale(.75)",
-                          display: s(n) > 0 ? "block" : "none"
+                          display: l(n) > 0 ? "block" : "none",
+                          width: n === t ? "100%" : "10%"
                         },
                         children: [
                           (0, h.jsx)("div", {
@@ -31568,7 +31579,7 @@
                     }),
                     (0, h.jsx)("button", {
                       className: "slide-button next " + (e ? "dark-mode" : ""),
-                      onClick: a,
+                      onClick: o,
                       "aria-label": "Next Slide",
                       children: (0, h.jsx)("span", {
                         className: "arrow",
@@ -32463,4 +32474,4 @@
     (__webpack_require__.p = "/");
   var __webpack_exports__ = __webpack_require__(8071);
 })();
-//# sourceMappingURL=main.350a98ca.js.map
+//# sourceMappingURL=main.578d0efc.js.map

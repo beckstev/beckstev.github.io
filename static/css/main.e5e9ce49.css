@@ -1154,20 +1154,34 @@ span.certificate-tag:hover {
 @media (max-width: 768px) {
   .talk-header-title {
     font-size: 2rem !important;
+    padding: 0 20rem !important;
     padding: 0 1rem !important;
     width: 100% !important;
   }
   .talks-container {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
     width: 100% !important;
   }
   .talk-card {
-    flex: 0 0 100%;
+    flex: 0 0 auto;
     margin: 0 auto;
+    max-width: 100%;
+    width: 80% !important;
   }
   .talk-details {
     width: 100% !important;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .card-location,
+  .card-title {
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  .card-location {
+    font-size: 1rem;
   }
 }
 .card-image {
@@ -1180,22 +1194,22 @@ span.certificate-tag:hover {
 }
 @media (max-width: 768px) {
   .slide-button {
-    background: #0000 !important;
     border: none !important;
     height: 60% !important;
     padding: 0 !important;
     top: 230px !important;
     transform: none !important;
+    transition: background 0.3s ease-in-out;
     width: 10% !important;
   }
   .slide-button.prev {
-    left: 0 !important;
+    background: linear-gradient(90deg, #55198b, #0000);
   }
   .slide-button.next {
-    right: 0 !important;
+    background: linear-gradient(90deg, #0000, #55198b);
   }
-  .slide-button .arrow {
-    display: none !important;
+  .slide-button:hover {
+    opacity: 0.8;
   }
 }
 .talks-carousel {
@@ -1304,4 +1318,4 @@ span.certificate-tag:hover {
   color: #fff;
   transition: "0.1s";
 }
-/*# sourceMappingURL=main.0722d176.css.map*/
+/*# sourceMappingURL=main.e5e9ce49.css.map*/
