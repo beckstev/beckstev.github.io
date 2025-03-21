@@ -114,11 +114,11 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/paper_images/NLA_cover_image.jpg"),
-      projectName: "Optoacoustic activation function",
+      projectName: "Optoacoustic Activation Function",
       projectDesc: "Nonlinear signal processing leveraging sound waves",
       footerLink: [
         {
-          name: "See article",
+          name: "See Article",
           url: "https://www.degruyter.com/document/doi/10.1515/nanoph-2024-0513/html"
         }
       ]
@@ -129,7 +129,7 @@ const bigProjects = {
       projectDesc: "Processing context with sound waves",
       footerLink: [
         {
-          name: "See article",
+          name: "See Article",
           url: "https://www.nature.com/articles/s41467-024-47053-6"
         }
         //  you can add extra buttons here.
@@ -137,11 +137,11 @@ const bigProjects = {
     },
     {
       image: require("./assets/images/paper_images/memory_cover_image.jpg"),
-      projectName: "Photonic RAM in long-lasting sound waves",
+      projectName: "Photonic RAM in long-lasting Sound Waves",
       projectDesc: "Storing optical information in sound waves",
       footerLink: [
         {
-          name: "See article",
+          name: "See Article",
           url: "https://pubs.acs.org/doi/10.1021/acsphotonics.4c00478?goto=supporting-info"
         }
       ]
@@ -373,7 +373,6 @@ const commsData = {
     }
   ]
 };
-
 
 // Podcast Section
 

@@ -8,6 +8,15 @@ export default function TalksCarousel() {
   const {isDark} = useContext(StyleContext);
   const [currentSlide, setCurrentSlide] = useState(1);
   const [autoplay] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleNextSlide = () => {
     setCurrentSlide(prevSlide => (prevSlide + 1) % commsData.talks.length);
@@ -20,26 +29,18 @@ export default function TalksCarousel() {
     );
   };
 
-  useEffect(() => {
-    if (autoplay) {
-      const intervalId = setInterval(() => {
-        handleNextSlide();
-      }, 5000);
-
-      return () => clearInterval(intervalId);
-    }
-  }, [autoplay]);
-
-  // Helper function to calculate opacity based on slide index
   const getOpacity = index => {
-    if (index === currentSlide) return 1; // Fully visible for the center slide
+    if (isMobile) {
+      return index === currentSlide ? 1 : 0;
+    }
+    if (index === currentSlide) return 1;
     if (
       index ===
         (currentSlide - 1 + commsData.talks.length) % commsData.talks.length ||
       index === (currentSlide + 1) % commsData.talks.length
     )
-      return 0.25; // 50% opacity for side slides
-    return 0; // Hide other slides
+      return 0.25;
+    return 0;
   };
 
   return (
@@ -65,8 +66,9 @@ export default function TalksCarousel() {
               className={`talk-card ${isDark ? "dark-mode" : ""}`}
               style={{
                 opacity: getOpacity(index),
-                transform: index === currentSlide ? "scale(1)" : "scale(.75)", // Slightly scale up the center slide
-                display: getOpacity(index) > 0 ? "block" : "none" // Show only relevant slides
+                transform: index === currentSlide ? "scale(1)" : "scale(.75)",
+                display: getOpacity(index) > 0 ? "block" : "none",
+                width: index === currentSlide ? "100%" : "10%"
               }}
             >
               <div className="talk-image">
@@ -85,6 +87,13 @@ export default function TalksCarousel() {
                 </p>
                 <p
                   className={
+                    isDark ? "dark-mode card-description" : "card-description"
+                  }
+                >
+                  {talk.coauthors}
+                </p>
+                <p
+                  className={
                     isDark ? "dark-mode card-location" : "card-location"
                   }
                 >
@@ -94,20 +103,22 @@ export default function TalksCarousel() {
             </div>
           ))}
         </div>
-        <button
-          className={`slide-button prev ${isDark ? "dark-mode" : ""}`}
-          onClick={handlePrevSlide}
-          aria-label="Previous Slide"
-        >
-          <span className="arrow">&#8592;</span>
-        </button>
-        <button
-          className={`slide-button next ${isDark ? "dark-mode" : ""}`}
-          onClick={handleNextSlide}
-          aria-label="Next Slide"
-        >
-          <span className="arrow">&#8594;</span>
-        </button>
+        <div className="buttons-container">
+          <button
+            className={`slide-button prev ${isDark ? "dark-mode" : ""}`}
+            onClick={handlePrevSlide}
+            aria-label="Previous Slide"
+          >
+            <span className="my_arrow">⬅️</span>
+          </button>
+          <button
+            className={`slide-button next ${isDark ? "dark-mode" : ""}`}
+            onClick={handleNextSlide}
+            aria-label="Next Slide"
+          >
+            <span className="my_arrow">➡️</span>
+          </button>
+        </div>
       </div>
     </Fade>
   );

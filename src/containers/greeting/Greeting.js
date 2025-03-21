@@ -43,10 +43,10 @@ export default function Greeting() {
           </div>
           <div className="greeting-image-div">
             {
-             <img
-             src={require("../../assets/images/profile_picutre_webapge-circle_rescalded.png")}
-             alt="Steven Becker"
-           />
+              <img
+                src={require("../../assets/images/profile_picutre_webapge-circle_rescalded.png")}
+                alt="Steven Becker"
+              />
             }
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
-import { skillsSection} from "../../portfolio";
+import {skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 

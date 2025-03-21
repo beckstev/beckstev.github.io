@@ -20,7 +20,7 @@
   .talk-header-title {
     width: 100% !important;
     font-size: 2rem !important;
-    padding: 0 1rem !important;
+    padding: 0 20rem !important;
   }
 }
 
@@ -44,6 +44,18 @@
   display: none;
 }
 
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: $textColor;
+}
+
+.talk-image {
+  width: 100% !important;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
 /* Mobile adjustments for carousel cards */
 @media (max-width: 768px) {
   .talk-header-title {
@@ -52,36 +64,42 @@
     padding: 0 1rem !important;
   }
   .talks-container {
-    width: 100% !important;
-    margin: 0;
-    padding: 0;
+    width: max-width !important; /* Make it full-width */
+    display: flex;
+    justify-content: center; /* Ensure content stays centered */
   }
   .talk-card {
-    flex: 0 0 100%; /* Take up the full container width */
-    margin: 0 auto;
+    width: 80% !important; /* 80% of .talks-container */
+    max-width: 100%; /* Ensure it doesn't exceed parent */
+    margin: 0 auto; /* Center it */
+    flex: 0 0 auto; /* Allow it to resize dynamically */
   }
   .talk-details {
     width: 100% !important; /* Force full width */
   }
-}
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: $textColor;
+  }
 
+  .card-location {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: $textColor;
+  }
 
-.talk-image {
-  margin-bottom: 1rem;
-  border-radius: 10px;
+  .talk-image {
+    width: 100% !important;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
 }
 
 .card-image {
-  width: 100%;
-  max-width: 100%;
+  width: 100px;
   height: auto;
   border-radius: 8px;
-}
-
-.card-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: $textColor;
 }
 
 .card-description {
@@ -100,50 +118,59 @@
   transition: background-color 0.3s ease;
   position: absolute;
   top: 50%;
-  width: 60px;
-  height: 60px;
+  height: 160px !important;
+  width: 40px !important;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
   justify-content: center;
 
   &.prev {
+    background: linear-gradient(to right, $buttonColor, transparent);
     left: 10px;
   }
+
   &.next {
+    background: linear-gradient(to right, transparent, $buttonColor);
     right: 10px;
   }
   &:hover {
     background-color: $buttonColor;
   }
-  .arrow {
-    font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 }
 
+.my-arrow {
+  font-size: 20px;
+}
 
 /* Mobile-specific overrides for navigation buttons */
 @media (max-width: 768px) {
   .slide-button {
-    background: transparent !important;
     border: none !important;
-    top: 230px !important;
-    height: 60% !important;
-    width: 10% !important;
+    top: 360px !important;
+    height: 160px !important;
+    width: 40px !important;
     transform: none !important;
     padding: 0 !important;
+    transition: background 0.3s ease-in-out;
+
+    &.prev {
+      background: linear-gradient(to right, $buttonColor, transparent);
+      left: 10px;
+    }
+
+    &.next {
+      background: linear-gradient(to right, transparent, $buttonColor);
+      right: 10px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
-  .slide-button.prev {
-    left: 0 !important;
-  }
-  .slide-button.next {
-    right: 0 !important;
-  }
-  .slide-button .arrow {
-    display: none !important;
+
+  .my-arrow {
+    font-size: 15px;
   }
 }
 

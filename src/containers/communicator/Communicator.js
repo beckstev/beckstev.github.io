@@ -1,6 +1,6 @@
 import React, {useContext} from "react";
 import "./Communicator.scss";
-import  {communicatorSection} from "../../portfolio";
+import {communicatorSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 

@@ -1,13 +1,26 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, {useState, useEffect, useContext} from "react";
 import "./TalkCarousel.scss";
-import { Fade } from "react-reveal";
+import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
-import { talksData } from "../../portfolio";
+import {talksData} from "../../portfolio";
+import emoji from "react-easy-emoji";
+
+const getEmoji = selected_emoji => {
+  return emoji(selected_emoji);
+};
 
 export default function TalksCarousel() {
-  const { isDark } = useContext(StyleContext);
+  const {isDark} = useContext(StyleContext);
   const [currentSlide, setCurrentSlide] = useState(1);
-  const [autoplay] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleNextSlide = () => {
     setCurrentSlide(prevSlide => (prevSlide + 1) % talksData.talks.length);
@@ -20,29 +33,18 @@ export default function TalksCarousel() {
     );
   };
 
-  useEffect(() => {
-    if (autoplay) {
-      const intervalId = setInterval(() => {
-        handleNextSlide();
-      }, 5000);
-      return () => clearInterval(intervalId);
-    }
-  }, [autoplay]);
-
-  // Helper function to calculate opacity based on slide index.
-  // On mobile, only show the active slide.
   const getOpacity = index => {
-    const isMobile = window.innerWidth < 768;
     if (isMobile) {
       return index === currentSlide ? 1 : 0;
     }
-    if (index === currentSlide) return 1; // Fully visible for the center slide
+    if (index === currentSlide) return 1;
     if (
-      index === (currentSlide - 1 + talksData.talks.length) % talksData.talks.length ||
+      index ===
+        (currentSlide - 1 + talksData.talks.length) % talksData.talks.length ||
       index === (currentSlide + 1) % talksData.talks.length
     )
-      return 0.25; // 25% opacity for side slides on desktop
-    return 0; // Hide other slides
+      return 0.25;
+    return 0;
   };
 
   return (
@@ -50,7 +52,13 @@ export default function TalksCarousel() {
       <div className="main" id="talks-carousel">
         <div className="talk-header">
           <h1 className="talk-header-title">{talksData.title}</h1>
-          <p className={isDark ? "dark-mode talk-header-subtitle" : "subTitle talk-header-subtitle"}>
+          <p
+            className={
+              isDark
+                ? "dark-mode talk-header-subtitle"
+                : "subTitle talk-header-subtitle"
+            }
+          >
             {talksData.subtitle}
           </p>
         </div>
@@ -63,7 +71,8 @@ export default function TalksCarousel() {
               style={{
                 opacity: getOpacity(index),
                 transform: index === currentSlide ? "scale(1)" : "scale(.75)",
-                display: getOpacity(index) > 0 ? "block" : "none"
+                display: getOpacity(index) > 0 ? "block" : "none",
+                width: index === currentSlide ? "100%" : "10%"
               }}
             >
               <div className="talk-image">
@@ -73,13 +82,25 @@ export default function TalksCarousel() {
                 <h3 className={isDark ? "dark-mode card-title" : "card-title"}>
                   {talk.title}
                 </h3>
-                <p className={isDark ? "dark-mode card-description" : "card-description"}>
+                <p
+                  className={
+                    isDark ? "dark-mode card-description" : "card-description"
+                  }
+                >
                   {talk.description}
                 </p>
-                <p className={isDark ? "dark-mode card-description" : "card-description"}>
+                <p
+                  className={
+                    isDark ? "dark-mode card-description" : "card-description"
+                  }
+                >
                   {talk.coauthors}
                 </p>
-                <p className={isDark ? "dark-mode card-location" : "card-location"}>
+                <p
+                  className={
+                    isDark ? "dark-mode card-location" : "card-location"
+                  }
+                >
                   <strong>{talk.location}</strong>
                 </p>
               </div>
@@ -92,14 +113,14 @@ export default function TalksCarousel() {
             onClick={handlePrevSlide}
             aria-label="Previous Slide"
           >
-            <span className="arrow">&#8592;</span>
+            <span className="my-arrow"> ⬅️</span>
           </button>
           <button
             className={`slide-button next ${isDark ? "dark-mode" : ""}`}
             onClick={handleNextSlide}
             aria-label="Next Slide"
           >
-            <span className="arrow">&#8594;</span>
+            <span className="my-arrow"> ➡️</span>
           </button>
         </div>
       </div>

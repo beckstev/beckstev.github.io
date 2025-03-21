@@ -5,13 +5,23 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 5rem;
-  position: center;
 }
 
-.talks-title {
-  margin-bottom: 2rem;
+.talk-header-title {
+  margin-bottom: 1rem;
   color: $titleColor;
   font-size: 2.5rem;
+  text-align: center;
+  width: 80%;
+}
+
+/* Mobile adjustments for the header title */
+@media (max-width: 768px) {
+  .talk-header-title {
+    width: 100% !important;
+    font-size: 2rem !important;
+    padding: 0 20rem !important;
+  }
 }
 
 .talks-container {
@@ -25,24 +35,13 @@
 }
 
 .talk-card {
-  flex: 0 0 30%; // Each card takes up about 30% of the container width
+  flex: 0 0 30%;
   transition: opacity 0.5s ease, transform 0.5s ease;
   text-align: center;
   margin: 0 1rem;
-  opacity: 0; // Default to fully hidden
-  transform: scale(1); // Default scale
-  display: none; // Default to not displayed
-}
-
-.talk-image {
-  margin-bottom: 1rem;
-  border-radius: 10px;
-}
-
-.card-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+  opacity: 0;
+  transform: scale(1);
+  display: none;
 }
 
 .card-title {
@@ -51,46 +50,131 @@
   color: $textColor;
 }
 
+.talk-image {
+  width: 100% !important;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+/* Mobile adjustments for carousel cards */
+@media (max-width: 768px) {
+  .talk-header-title {
+    width: 100% !important;
+    font-size: 2rem !important;
+    padding: 0 1rem !important;
+  }
+  .talks-container {
+    width: max-width !important; /* Make it full-width */
+    display: flex;
+    justify-content: center; /* Ensure content stays centered */
+  }
+  .talk-card {
+    width: 80% !important; /* 80% of .talks-container */
+    max-width: 100%; /* Ensure it doesn't exceed parent */
+    margin: 0 auto; /* Center it */
+    flex: 0 0 auto; /* Allow it to resize dynamically */
+  }
+  .talk-details {
+    width: 100% !important; /* Force full width */
+  }
+  .card-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: $textColor;
+  }
+
+  .card-location {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: $textColor;
+  }
+
+  .talk-image {
+    width: 100% !important;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+}
+
+.card-image {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+}
+
 .card-description {
   font-size: 1rem;
   color: $textColor;
 }
 
+/* Default (desktop) navigation buttons */
 .slide-button {
   background-color: $buttonColor;
   border: none;
   color: white;
   padding: 0.5rem 1rem;
-  font-size: 50rem;
-  margin: 1rem;
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s ease;
   position: absolute;
   top: 50%;
-  width: 60px; // Set a fixed width
-  height: 60px; // Set a fixed height
+  height: 160px !important;
+  width: 40px !important;
   transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &.prev {
+    background: linear-gradient(to right, $buttonColor, transparent);
     left: 10px;
   }
 
   &.next {
+    background: linear-gradient(to right, transparent, $buttonColor);
     right: 10px;
   }
-
   &:hover {
     background-color: $buttonColor;
   }
-  .arrow {
-    font-size: 2rem; // Increase arrow size
-    display: flex;
-    align-items: center;
-    justify-content: center;
+}
+
+.my-arrow {
+  font-size: 20px;
+}
+
+/* Mobile-specific overrides for navigation buttons */
+@media (max-width: 768px) {
+  .slide-button {
+    border: none !important;
+    top: 200px !important;
+    height: 160px !important;
+    width: 40px !important;
+    transform: none !important;
+    padding: 0 !important;
+    transition: background 0.3s ease-in-out;
+
+    &.prev {
+      background: linear-gradient(to right, $buttonColor, transparent);
+      left: 10px;
+    }
+
+    &.next {
+      background: linear-gradient(to right, transparent, $buttonColor);
+      right: 10px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .my-arrow {
+    font-size: 15px;
   }
 }
 
+/* Dark mode override */
 .dark-mode {
   background-color: $darkBackground;
   color: $textColorDark;
