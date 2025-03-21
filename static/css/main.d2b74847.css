@@ -824,6 +824,7 @@ input:checked + .slider:after {
   }
 }
 .card-image {
+  max-width: 100%;
   width: 250px;
 }
 .card-title {
@@ -1144,6 +1145,37 @@ span.certificate-tag:hover {
     display: none;
   }
 }
+@media (max-width: 768px) {
+  .slide-button {
+    border: none !important;
+    height: 160px !important;
+    padding: 0 !important;
+    top: 360px !important;
+    transform: none !important;
+    transition: background 0.3s ease-in-out;
+    width: 40px !important;
+  }
+  .slide-button.prev {
+    background: linear-gradient(90deg, #55198b, #0000);
+    left: 10px;
+  }
+  .slide-button.next {
+    background: linear-gradient(90deg, #0000, #55198b);
+    right: 10px;
+  }
+  .slide-button:hover {
+    opacity: 0.8;
+  }
+  .my-arrow {
+    font-size: 15px;
+  }
+}
+.talks-carousel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
 .talk-header-title {
   color: #000;
   font-size: 2.5rem;
@@ -1155,13 +1187,47 @@ span.certificate-tag:hover {
   .talk-header-title {
     font-size: 2rem !important;
     padding: 0 20rem !important;
+    width: 100% !important;
+  }
+}
+.talks-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+}
+.talk-card {
+  display: none;
+  flex: 0 0 30%;
+  margin: 0 1rem;
+  opacity: 0;
+  text-align: center;
+  transform: scale(1);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.card-title {
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.talk-image {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  width: 100% !important;
+}
+@media (max-width: 768px) {
+  .talk-header-title {
+    font-size: 2rem !important;
     padding: 0 1rem !important;
     width: 100% !important;
   }
   .talks-container {
     display: flex;
     justify-content: center;
-    width: 100% !important;
+    width: max-width !important;
   }
   .talk-card {
     flex: 0 0 auto;
@@ -1183,119 +1249,82 @@ span.certificate-tag:hover {
   .card-location {
     font-size: 1rem;
   }
-}
-.card-image {
-  max-width: 100%;
-}
-.slide-button {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-@media (max-width: 768px) {
-  .slide-button {
-    border: none !important;
-    height: 60% !important;
-    padding: 0 !important;
-    top: 230px !important;
-    transform: none !important;
-    transition: background 0.3s ease-in-out;
-    width: 10% !important;
+  .talk-image {
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: 100% !important;
   }
-  .slide-button.prev {
-    background: linear-gradient(90deg, #55198b, #0000);
-  }
-  .slide-button.next {
-    background: linear-gradient(90deg, #0000, #55198b);
-  }
-  .slide-button:hover {
-    opacity: 0.8;
-  }
-}
-.talks-carousel {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5rem;
-  position: center;
-}
-.talks-title {
-  color: #000;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-}
-.talks-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  overflow: hidden;
-  position: relative;
-  width: 80%;
-}
-.talk-card {
-  display: none;
-  flex: 0 0 30%;
-  margin: 0 1rem;
-  opacity: 0;
-  text-align: center;
-  transform: scale(1);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-.talk-image {
-  border-radius: 10px;
-  margin-bottom: 1rem;
 }
 .card-image {
   border-radius: 8px;
   height: auto;
-  width: 100%;
-}
-.card-title {
-  color: #000;
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  width: 100px;
 }
 .card-description {
   color: #000;
   font-size: 1rem;
 }
 .slide-button {
+  align-items: center;
   background-color: #55198b;
   border: none;
   border-radius: 4px;
   color: #fff;
   cursor: pointer;
-  font-size: 50rem;
-  height: 60px;
-  margin: 1rem;
+  display: flex;
+  height: 160px !important;
+  justify-content: center;
   padding: 0.5rem 1rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   transition: background-color 0.3s ease;
-  width: 60px;
+  width: 40px !important;
 }
 .slide-button.prev {
+  background: linear-gradient(90deg, #55198b, #0000);
   left: 10px;
 }
 .slide-button.next {
+  background: linear-gradient(90deg, #0000, #55198b);
   right: 10px;
 }
 .slide-button:hover {
   background-color: #55198b;
 }
-.slide-button .arrow {
-  font-size: 2rem;
+.my-arrow {
+  font-size: 20px;
 }
-.slide-button .arrow,
+@media (max-width: 768px) {
+  .slide-button {
+    border: none !important;
+    height: 160px !important;
+    padding: 0 !important;
+    top: 200px !important;
+    transform: none !important;
+    transition: background 0.3s ease-in-out;
+    width: 40px !important;
+  }
+  .slide-button.prev {
+    background: linear-gradient(90deg, #55198b, #0000);
+    left: 10px;
+  }
+  .slide-button.next {
+    background: linear-gradient(90deg, #0000, #55198b);
+    right: 10px;
+  }
+  .slide-button:hover {
+    opacity: 0.8;
+  }
+  .my-arrow {
+    font-size: 15px;
+  }
+}
 .splash-container {
   align-items: center;
   display: flex;
-  justify-content: center;
-}
-.splash-container {
   flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
 }
 .splash-animation-container {
@@ -1318,4 +1347,4 @@ span.certificate-tag:hover {
   color: #fff;
   transition: "0.1s";
 }
-/*# sourceMappingURL=main.e5e9ce49.css.map*/
+/*# sourceMappingURL=main.d2b74847.css.map*/
