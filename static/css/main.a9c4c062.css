@@ -1158,7 +1158,7 @@ span.certificate-tag:hover {
   width: 250px;
 }
 .slide-button {
-  height: 160px !important;
+  height: 380px !important;
   top: 50%;
 }
 @media (max-width: 768px) {
@@ -1292,7 +1292,7 @@ span.certificate-tag:hover {
   justify-content: center;
   padding: 0.5rem 1rem;
   position: absolute;
-  top: 250px !important;
+  top: 380px !important;
   transform: translateY(-50%);
   transition: background-color 0.3s ease;
   width: 40px !important;
@@ -1363,4 +1363,4 @@ span.certificate-tag:hover {
   color: #fff;
   transition: "0.1s";
 }
-/*# sourceMappingURL=main.bf6c41ec.css.map*/
+/*# sourceMappingURL=main.a9c4c062.css.map*/

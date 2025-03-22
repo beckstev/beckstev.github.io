@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf6c41ec.css",
+    "main.css": "/static/css/main.a9c4c062.css",
     "main.js": "/static/js/main.805b841d.js",
     "static/media/DISEC D3-17_cutted.jpg": "/static/media/DISEC D3-17_cutted.ca5447df08d7996ce32d.jpg",
     "static/media/lange_nacht_der_wissenschaft_220521.jpg": "/static/media/lange_nacht_der_wissenschaft_220521.c6879c211deb81bb9bb7.jpg",
@@ -34,8 +34,8 @@
     "static/media/Logo-Deutschlandstipendium-1.jpg": "/static/media/Logo-Deutschlandstipendium-1.02036050c1facab3fdb8.jpg",
     "static/media/Elitenetzwerk_Bavaria.png": "/static/media/Elitenetzwerk_Bavaria.641ff5a9e5aab83d73fb.png",
     "index.html": "/index.html",
-    "main.bf6c41ec.css.map": "/static/css/main.bf6c41ec.css.map",
+    "main.a9c4c062.css.map": "/static/css/main.a9c4c062.css.map",
     "main.805b841d.js.map": "/static/js/main.805b841d.js.map"
   },
-  "entrypoints": ["static/css/main.bf6c41ec.css", "static/js/main.805b841d.js"]
+  "entrypoints": ["static/css/main.a9c4c062.css", "static/js/main.805b841d.js"]
 }
