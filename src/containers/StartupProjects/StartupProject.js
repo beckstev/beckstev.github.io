@@ -21,7 +21,13 @@ export default function StartupProject() {
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="papers">
         <div>
-          <h1 className="talk-header-title">{bigProjects.title}</h1>
+          <h1 className={
+              isDark
+                ? "dark-mode"
+                : ""
+            }
+           > 
+            {bigProjects.title}</h1>
           <p
             className={
               isDark
@@ -48,7 +54,7 @@ export default function StartupProject() {
                       <img
                         src={project.image}
                         alt={project.projectName}
-                        className="card-image"
+                        className="project-cover-image"
                       ></img>
                     </div>
                   ) : null}

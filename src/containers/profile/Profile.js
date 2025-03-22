@@ -17,12 +17,7 @@ export default function Profile() {
         .then(response => {
           setProfileFunction(response?.data?.user || "No Data");
         })
-        .catch(error => {
-          console.error(
-            `${error} (GitHub contact section could not be displayed. Reverted to default)`
-          );
-          setProfileFunction("Error");
-        });
+        .catch(console.error);
     };
 
     getProfileData();

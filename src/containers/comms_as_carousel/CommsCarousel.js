@@ -47,7 +47,12 @@ export default function TalksCarousel() {
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="talks-carousel">
         <div className="talk-header">
-          <h1 className="talk-header-title">{commsData.title}</h1>
+        <h1 className={
+                isDark
+                  ? "dark-mode"
+                  : ""
+              }>
+         {commsData.title}</h1>
           <p
             className={
               isDark
@@ -72,7 +77,7 @@ export default function TalksCarousel() {
               }}
             >
               <div className="talk-image">
-                <img src={talk.image} alt={talk.title} className="card-image" />
+                <img src={talk.image} alt={talk.title} className="image-comms-event" />
               </div>
               <div className="talk-details">
                 <h3 className={isDark ? "dark-mode card-title" : "card-title"}>
@@ -109,14 +114,14 @@ export default function TalksCarousel() {
             onClick={handlePrevSlide}
             aria-label="Previous Slide"
           >
-            <span className="my_arrow">⬅️</span>
+            <span className="my-arrow">⬅️</span>
           </button>
           <button
             className={`slide-button next ${isDark ? "dark-mode" : ""}`}
             onClick={handleNextSlide}
             aria-label="Next Slide"
           >
-            <span className="my_arrow">➡️</span>
+            <span className="my-arrow">➡️</span>
           </button>
         </div>
       </div>

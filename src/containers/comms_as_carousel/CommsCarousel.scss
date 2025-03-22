@@ -96,8 +96,8 @@
   }
 }
 
-.card-image {
-  width: 100px;
+.image-comms-event {
+  width: 250px;
   height: auto;
   border-radius: 8px;
 }
@@ -117,8 +117,8 @@
   border-radius: 4px;
   transition: background-color 0.3s ease;
   position: absolute;
-  top: 50%;
-  height: 160px !important;
+  top: 250px !important;
+  height: 180px !important;
   width: 40px !important;
   transform: translateY(-50%);
   display: flex;
@@ -148,7 +148,7 @@
   .slide-button {
     border: none !important;
     top: 200px !important;
-    height: 160px !important;
+    height: 180px !important;
     width: 40px !important;
     transform: none !important;
     padding: 0 !important;
