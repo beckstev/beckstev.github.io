@@ -47,12 +47,7 @@ export default function TalksCarousel() {
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="talks-carousel">
         <div className="talk-header">
-        <h1 className={
-                isDark
-                  ? "dark-mode"
-                  : ""
-              }>
-         {commsData.title}</h1>
+          <h1 className={isDark ? "dark-mode" : ""}>{commsData.title}</h1>
           <p
             className={
               isDark
@@ -77,7 +72,11 @@ export default function TalksCarousel() {
               }}
             >
               <div className="talk-image">
-                <img src={talk.image} alt={talk.title} className="image-comms-event" />
+                <img
+                  src={talk.image}
+                  alt={talk.title}
+                  className="image-comms-event"
+                />
               </div>
               <div className="talk-details">
                 <h3 className={isDark ? "dark-mode card-title" : "card-title"}>
