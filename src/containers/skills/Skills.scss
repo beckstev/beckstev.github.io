@@ -2,12 +2,18 @@
 
 .skills-main-div {
   display: flex;
+  justify-content: center; /* horizontally centers content inside */
+  align-items: center; /* vertically aligns image and text -> So that image and text are on the same height.  */
   width: 100%;
   overflow: hidden;
+  gap: 2rem; /* adds space between image and text */
+  flex-wrap: wrap; /* ensures wrapping on smaller screens */
+  box-sizing: border-box;
+  padding: 2rem 1rem;
 }
-
 .skills-text-div {
-  margin-left: 50px;
+  margin-left: 0; /* handled by gap instead */
+  max-width: 600px; /* keeps text readable */
 }
 
 .skills-main-div > * {
@@ -24,6 +30,7 @@
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
+  line-height: 1.4;
 }
 .subTitle {
   color: $subTitle;

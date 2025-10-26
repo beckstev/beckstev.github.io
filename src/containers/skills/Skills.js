@@ -16,7 +16,7 @@ export default function Skills() {
           <div className="skills-image-div">
             {
               <img
-                alt="Steven Becker in the lab"
+                alt="Steven Becker researching/engineering on innovative solutions to leverage Photonic Machine Learning / Optical Computing / Photonic Neuromorphic Computing"
                 src={require("../../assets/images/lab_image.jpg")}
               ></img>
             }
@@ -27,6 +27,8 @@ export default function Skills() {
             <h1
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
+              {"Being a"}
+              {<br />}
               {skillsSection.title}
               {"  "}
             </h1>
