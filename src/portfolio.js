@@ -21,8 +21,13 @@ const illustration = {
 
 const greeting = {
   username: "beckstev",
-  title: "Moin, I am Steven",
-  subTitle: emoji("A researcher in photonic machine learning."),
+  title1: "Moin,",
+  title2: "I am Steven",
+  subTitle: [
+    emoji("Researcher Engineer in Photonic Machine Learning"),
+    "PhD in Physics",
+    "Immersed in the DeepTech Env of Berlin"
+  ],
   resumeLink: "", // Set to empty to hide the button; https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -45,23 +50,20 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "Being a scientist",
-  subTitle: "I harvested sound waves for photonic machine learning.",
+  title: "Research Engineer",
+  subTitle: emoji(
+    "🚀 Mission: Moving Photonic Machine Learning out of the lab into industry"
+  ),
   skills: [
     emoji(
-      "⚡ Explored for the first time the intersection between nonlinear light-sound dynamics and photonic neuromorphic computing"
+      "👥 Engaged with stakeholders from industries to discuss about use cases of Photonic Machine Learning"
     ),
     emoji(
-      "⚡ Experimentally captured the context carried by a set of light pulses using sound waves"
+      "⚡ Designed projects to showcase the potential of Photonic Machine Learning beyond AI as topical lead at Fraunhofer HHI"
     ),
+    emoji("🥳 Proud Innovation: "),
     emoji(
-      "⚡ Demonstrated an all optical nonlinear activation function mimicking the behavior of neurons"
-    ),
-    emoji(
-      "⚡ Showcased a method that stores information carried by light pulses in sound waves ten times longer as the previous status-quo"
-    ),
-    emoji(
-      "⚡  Co-lead and organized the first ”Photonic Machine Learning” seminar at FAU Erlangen-Nuremberg"
+      "Unlocked the intersection between nonlinear light-sound dynamics and Photonic Machine Learning"
     )
   ],
   /* Make Sure to include correct Font Awesome Classname to view your icon
