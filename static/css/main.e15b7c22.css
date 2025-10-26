@@ -300,6 +300,16 @@ input:checked + .slider:after {
 .greet-main {
   margin: 2rem auto 0;
 }
+.greeting-main {
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  overflow: hidden;
+  padding: 2rem 1rem;
+  width: 100%;
+}
 .subTitle {
   color: #868e96 !important;
 }
@@ -324,11 +334,13 @@ input:checked + .slider:after {
 }
 .greeting-text-p {
   font-size: 30px;
-  line-height: 40px;
+  line-height: 1.1;
+  margin: 20px 0;
 }
 .greeting-image-div > img {
+  border-radius: 10px;
   height: auto;
-  max-width: 100%;
+  max-width: 70%;
 }
 .wave-emoji {
   animation-duration: 1.8s;
@@ -506,10 +518,25 @@ input:checked + .slider:after {
     font-size: 0.75rem;
   }
 }
+.skills-main-div {
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+.skills-text-div {
+  margin-left: 0;
+  max-width: 600px;
+}
 .skills-image-div > img {
   border-radius: 10px;
   height: auto;
   max-width: 100%;
+}
+.skills-heading {
+  line-height: 1.4;
 }
 .skills-main-div {
   display: flex;
@@ -1363,4 +1390,4 @@ span.certificate-tag:hover {
   color: #fff;
   transition: "0.1s";
 }
-/*# sourceMappingURL=main.a9c4c062.css.map*/
+/*# sourceMappingURL=main.e15b7c22.css.map*/

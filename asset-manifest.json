@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.a9c4c062.css",
-    "main.js": "/static/js/main.805b841d.js",
+    "main.css": "/static/css/main.e15b7c22.css",
+    "main.js": "/static/js/main.f4da37c6.js",
     "static/media/DISEC D3-17_cutted.jpg": "/static/media/DISEC D3-17_cutted.ca5447df08d7996ce32d.jpg",
     "static/media/lange_nacht_der_wissenschaft_220521.jpg": "/static/media/lange_nacht_der_wissenschaft_220521.c6879c211deb81bb9bb7.jpg",
     "static/media/be-boosted_logo_white.png": "/static/media/be-boosted_logo_white.4302903304a740e68d74.png",
     "static/media/oreo_concept_with_copyright.png": "/static/media/oreo_concept_with_copyright.194ee43250836e1de712.png",
     "static/media/image_Cleo_US_talk.JPG": "/static/media/image_Cleo_US_talk.0048523e491b8332d7d0.JPG",
     "static/media/jdpg_mv_discussion.jpeg": "/static/media/jdpg_mv_discussion.d984a4f417c63195ece7.jpeg",
-    "static/media/profile_picutre_webapge-circle_rescalded.png": "/static/media/profile_picutre_webapge-circle_rescalded.ea9396e153a5dbc46f61.png",
     "static/media/lab_image.jpg": "/static/media/lab_image.7157a5fa9808a0f9473d.jpg",
+    "static/media/profile_picture_SB_2025.jpeg": "/static/media/profile_picture_SB_2025.3f5a3ca7920cd4634647.jpeg",
     "static/media/Logo_HELLA_neu.png": "/static/media/Logo_HELLA_neu.b0310ed305dc7d0c9e40.png",
+    "static/media/image_panel_6G_RIC_Advisory_Board_Meeting.jpeg": "/static/media/image_panel_6G_RIC_Advisory_Board_Meeting.32a0551908e63793d157.jpeg",
     "static/media/image_fronties_in_neuromoprhic_computing.jpg": "/static/media/image_fronties_in_neuromoprhic_computing.8e1670ff2f47c641bdcf.jpg",
     "static/media/jdpg_mv_2022_cutted.jpg": "/static/media/jdpg_mv_2022_cutted.fca5292814bff9a11fd3.jpg",
     "static/media/image_hereaus.jpg": "/static/media/image_hereaus.f383be1a285d85e69701.jpg",
@@ -34,8 +35,8 @@
     "static/media/Logo-Deutschlandstipendium-1.jpg": "/static/media/Logo-Deutschlandstipendium-1.02036050c1facab3fdb8.jpg",
     "static/media/Elitenetzwerk_Bavaria.png": "/static/media/Elitenetzwerk_Bavaria.641ff5a9e5aab83d73fb.png",
     "index.html": "/index.html",
-    "main.a9c4c062.css.map": "/static/css/main.a9c4c062.css.map",
-    "main.805b841d.js.map": "/static/js/main.805b841d.js.map"
+    "main.e15b7c22.css.map": "/static/css/main.e15b7c22.css.map",
+    "main.f4da37c6.js.map": "/static/js/main.f4da37c6.js.map"
   },
-  "entrypoints": ["static/css/main.a9c4c062.css", "static/js/main.805b841d.js"]
+  "entrypoints": ["static/css/main.e15b7c22.css", "static/js/main.f4da37c6.js"]
 }
