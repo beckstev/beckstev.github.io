@@ -21,8 +21,10 @@ export default function Greeting() {
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
-                {" "}
-                {greeting.title}{" "}
+                {""}
+                {greeting.title1}
+                {<br />}
+                {greeting.title2}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
               <p
@@ -32,20 +34,30 @@ export default function Greeting() {
                     : "greeting-text-p subTitle"
                 }
               >
-                {greeting.subTitle}
+                <div>
+                  {greeting.subTitle.map((item, index) => (
+                    <p
+                      key={index}
+                      className={
+                        isDark
+                          ? "dark-mode greeting-text-p"
+                          : "greeting-text-p subTitle"
+                      }
+                    >
+                      {item}
+                    </p>
+                  ))}
+                </div>
               </p>
               <SocialMedia />
-              <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                {}
-              </div>
             </div>
           </div>
           <div className="greeting-image-div">
             {
               <img
-                src={require("../../assets/images/profile_picutre_webapge-circle_rescalded.png")}
+                src={require("../../assets/images/profile_picture_SB_2025.jpeg")}
                 alt="Steven Becker"
+                style={{marginLeft: "160px"}}
               />
             }
           </div>

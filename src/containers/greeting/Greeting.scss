@@ -45,12 +45,14 @@
 
 .greeting-text-p {
   font-size: 30px;
-  line-height: 40px;
+  margin: 20px 0; /* small vertical spacing between paragraphs */
+  line-height: 1.1; /* optional: controls spacing between lines inside each <p> */
 }
 
 .greeting-image-div > img {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
+  border-radius: 10px;
 }
 
 .wave-emoji {
