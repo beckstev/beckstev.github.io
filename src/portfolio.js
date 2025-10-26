@@ -3,7 +3,7 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/images/profile_picutre_webapge-circle_rescalded.png"; // Rename to your file name for custom animation
+import splashAnimation from "./assets/images/profile_picture_SB_2025.jpeg"; // Rename to your file name for custom animation
 
 // Splash Screen
 
@@ -26,7 +26,7 @@ const greeting = {
   subTitle: [
     emoji("Researcher Engineer in Photonic Machine Learning"),
     "PhD in Physics",
-    "Immersed in the DeepTech Env of Berlin"
+    "Immersed in the DeepTech World of Berlin"
   ],
   resumeLink: "", // Set to empty to hide the button; https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -56,7 +56,7 @@ const skillsSection = {
   ),
   skills: [
     emoji(
-      "👥 Engaged with stakeholders from industries to discuss about use cases of Photonic Machine Learning"
+      "👥 Engaged with stakeholders from industries to discuss use cases of Photonic Machine Learning"
     ),
     emoji(
       "⚡ Designed projects to showcase the potential of Photonic Machine Learning beyond AI as topical lead at Fraunhofer HHI"
@@ -110,9 +110,9 @@ To know how to get github key look at readme.md */
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Scientific Articles",
+  title: "My Contributions to Photonic Machine Learning ",
   subtitle:
-    "This would not have been possible without all the people supporting me - thank you 🤗",
+    "None of this would have been possible without all the people supporting me - thank you 🤗",
   projects: [
     {
       image: require("./assets/images/paper_images/NLA_cover_image.jpg"),
@@ -232,10 +232,19 @@ const achievementSection = {
 };
 
 const talksData = {
-  title: "Scientific Talks and Posters",
+  title: "Talks and Posters",
   subtitle: emoji("A collection of my first author contributions"),
   display: true,
   talks: [
+    {
+      title: "Light-Speed Intelligence for Next-Gen Optical Networks",
+      description: "Talk",
+      coauthors: "",
+      location: "📍 6G-RIC Advisory Board Meeting, Germany (2025)",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/talk_images/image_panel_6G_RIC_Advisory_Board_Meeting.jpeg")
+    },
     {
       title:
         "High-speed coherent photonic random access memory in long-lasting sound waves",
