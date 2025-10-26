@@ -15,6 +15,14 @@
 
 .greeting-main {
   display: flex;
+  justify-content: center; /* horizontally centers content inside */
+  align-items: center; /* vertically aligns image and text -> So that image and text are on the same height.  */
+  width: 100%;
+  overflow: hidden;
+  gap: 2rem; /* adds space between image and text */
+  flex-wrap: wrap; /* ensures wrapping on smaller screens */
+  box-sizing: border-box;
+  padding: 2rem 1rem;
 }
 
 .subTitle {
