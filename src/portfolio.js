@@ -152,11 +152,47 @@ const bigProjects = {
   display: true // Set false to hide this section, defaults to true
 };
 
+const awardsSection = {
+  title: emoji("Recognitions 🙏"),
+  subtitle:
+    "It's really an honor for me to have received these recognitions for my work.",
+  projects: [
+    {
+      image: require("./assets/images/honors/staedtler_award_with_credits.png"),
+      projectName: "Dissertation Award from the STAEDTLER Stiftung",
+      projectDesc:
+        "Top 2 Dissertations of the Faculty of Science at FAU Erlangen-Nürnberg.",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: "https://www.fau.de/2025/10/news/studium/promotionspreise-staedtler-stiftung-verleiht-promotionspreise-an-fau-promovenden/",
+          confetti_position: 0.25
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/honors/2025_09_Almetes_award.jpg"),
+      projectName: "Science and Research Award 2025",
+      projectDesc:
+        "Awarded by the ALMETES Stiftung in the category: Economic technologies of the future for industry and the economy",
+      footerLink: [
+        {
+          name: "Learn More",
+          url: "https://www.almetes-stiftung.de/beschreibung-kategorien",
+          confetti_position: 0.75
+        }
+        //  you can add extra buttons here.
+      ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+
 // Achievement Section
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Honors  🏆 "),
+  title: emoji("Supporters 🫰"),
   subtitle: "Thanks to all the institutions who have supported me!",
 
   achievementsCards: [
@@ -432,6 +468,7 @@ export {
   skillsSection,
   workExperiences,
   bigProjects,
+  awardsSection,
   communicatorSection,
   podcastSection,
   contactInfo,

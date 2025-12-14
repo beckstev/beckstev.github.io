@@ -5,6 +5,7 @@ import Skills from "./skills/Skills";
 import Communication from "./communicator/Communicator";
 import WorkExperience from "./workExperience/WorkExperience";
 import StartupProject from "./StartupProjects/StartupProject";
+import Awards from "./Awards/Awards";
 import Achievement from "./achievement/Achievement";
 import Footer from "../components/footer/Footer";
 import Podcast from "./podcast/Podcast";
@@ -53,6 +54,7 @@ const Main = () => {
             <Skills />
             <WorkExperience />
             <StartupProject />
+            <Awards />
             <TalkCarousel />
             <Communication />
             <CommsCarousel />
