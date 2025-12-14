@@ -393,6 +393,15 @@ const commsData = {
       event_url: "",
       image: require("./assets/images/comm_images/DISEC D3-17_cutted.jpg")
     },
+
+    {
+      title: "German Parliament",
+      description: "Working in the office of Harald Ebner, MdB",
+      location: "📍 Berlin, Germany (2024-2025)",
+      slides_url: "",
+      event_url: "",
+      image: require("./assets/images/comm_images/2025_02_Harald_Bundestag-1.jpg")
+    },
     {
       title: "LIMUN Conference",
       description: "Represented Island in UNEP",
