@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a3372501.css",
-    "main.js": "/static/js/main.6b04a3b2.js",
+    "main.js": "/static/js/main.a98d07cc.js",
     "static/media/DISEC D3-17_cutted.jpg": "/static/media/DISEC D3-17_cutted.ca5447df08d7996ce32d.jpg",
     "static/media/lange_nacht_der_wissenschaft_220521.jpg": "/static/media/lange_nacht_der_wissenschaft_220521.c6879c211deb81bb9bb7.jpg",
     "static/media/be-boosted_logo_white.png": "/static/media/be-boosted_logo_white.4302903304a740e68d74.png",
@@ -11,6 +11,7 @@
     "static/media/staedtler_award_with_credits.png": "/static/media/staedtler_award_with_credits.159e6d85da6fe007318b.png",
     "static/media/lab_image.jpg": "/static/media/lab_image.7157a5fa9808a0f9473d.jpg",
     "static/media/profile_picture_SB_2025.jpeg": "/static/media/profile_picture_SB_2025.3f5a3ca7920cd4634647.jpeg",
+    "static/media/2025_02_Harald_Bundestag-1.jpg": "/static/media/2025_02_Harald_Bundestag-1.ee0c1842aa2fd5e1322f.jpg",
     "static/media/Logo_HELLA_neu.png": "/static/media/Logo_HELLA_neu.b0310ed305dc7d0c9e40.png",
     "static/media/image_panel_6G_RIC_Advisory_Board_Meeting.jpeg": "/static/media/image_panel_6G_RIC_Advisory_Board_Meeting.32a0551908e63793d157.jpeg",
     "static/media/image_fronties_in_neuromoprhic_computing.jpg": "/static/media/image_fronties_in_neuromoprhic_computing.8e1670ff2f47c641bdcf.jpg",
@@ -38,7 +39,7 @@
     "static/media/Elitenetzwerk_Bavaria.png": "/static/media/Elitenetzwerk_Bavaria.641ff5a9e5aab83d73fb.png",
     "index.html": "/index.html",
     "main.a3372501.css.map": "/static/css/main.a3372501.css.map",
-    "main.6b04a3b2.js.map": "/static/js/main.6b04a3b2.js.map"
+    "main.a98d07cc.js.map": "/static/js/main.a98d07cc.js.map"
   },
-  "entrypoints": ["static/css/main.a3372501.css", "static/js/main.6b04a3b2.js"]
+  "entrypoints": ["static/css/main.a3372501.css", "static/js/main.a98d07cc.js"]
 }

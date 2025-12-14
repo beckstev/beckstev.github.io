@@ -1,4 +1,4 @@
-/*! For license information please see main.6b04a3b2.js.LICENSE.txt */
+/*! For license information please see main.a98d07cc.js.LICENSE.txt */
 (() => {
   var __webpack_modules__ = {
       160: (e, t, r) => {
@@ -27651,6 +27651,14 @@
                 image: r(5399)
               },
               {
+                title: "German Parliament",
+                description: "Working in the office of Harald Ebner, MdB",
+                location: "\ud83d\udccd Berlin, Germany (2024-2025)",
+                slides_url: "",
+                event_url: "",
+                image: r(5208)
+              },
+              {
                 title: "LIMUN Conference",
                 description: "Represented Island in UNEP",
                 location: "\ud83d\udccd London, UK (2024)",
@@ -31234,6 +31242,12 @@
       5173: (e, t, r) => {
         e.exports = r(1497)();
       },
+      5208: (e, t, r) => {
+        "use strict";
+        e.exports =
+          r.p +
+          "static/media/2025_02_Harald_Bundestag-1.ee0c1842aa2fd5e1322f.jpg";
+      },
       5399: (e, t, r) => {
         "use strict";
         e.exports =
@@ -33287,4 +33301,4 @@
     (__webpack_require__.p = "/");
   var __webpack_exports__ = __webpack_require__(4285);
 })();
-//# sourceMappingURL=main.6b04a3b2.js.map
+//# sourceMappingURL=main.a98d07cc.js.map
