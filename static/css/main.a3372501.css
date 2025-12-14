@@ -398,6 +398,8 @@ input:checked + .slider:after {
   }
   .greeting-image-div {
     height: 256px;
+    text-align: center;
+    width: 100%;
   }
 }
 @media (max-width: 320px) {
@@ -755,16 +757,34 @@ input:checked + .slider:after {
   }
 }
 .project-cover-image {
+  width: 250px;
+}
+.project-image {
+  height: 250px;
+}
+@media (max-width: 768px) {
+  .project-subtitle {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+#awards .project-subtitle,
+#awards h1 {
+  text-align: center;
+}
+.project-cover-image {
   border-radius: 8px;
   height: auto;
   max-width: 100%;
-  width: 250px;
+  width: 350px;
 }
 .card-title {
   font-size: 22px;
+  text-align: center;
 }
 .card-subtitle {
   font-size: 17px;
+  text-align: center;
 }
 .project-card {
   background-color: #fff;
@@ -796,7 +816,7 @@ input:checked + .slider:after {
   align-items: center;
   border-radius: 10px;
   display: flex;
-  height: 250px;
+  height: 350px;
   justify-content: center;
   overflow: hidden;
   position: relative;
@@ -826,7 +846,7 @@ input:checked + .slider:after {
 }
 @media (max-width: 768px) {
   .project-subtitle {
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
   }
 }
@@ -1390,4 +1410,4 @@ span.certificate-tag:hover {
   color: #fff;
   transition: "0.1s";
 }
-/*# sourceMappingURL=main.e15b7c22.css.map*/
+/*# sourceMappingURL=main.a3372501.css.map*/

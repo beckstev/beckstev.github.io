@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.e15b7c22.css",
-    "main.js": "/static/js/main.f4da37c6.js",
+    "main.css": "/static/css/main.a3372501.css",
+    "main.js": "/static/js/main.6b04a3b2.js",
     "static/media/DISEC D3-17_cutted.jpg": "/static/media/DISEC D3-17_cutted.ca5447df08d7996ce32d.jpg",
     "static/media/lange_nacht_der_wissenschaft_220521.jpg": "/static/media/lange_nacht_der_wissenschaft_220521.c6879c211deb81bb9bb7.jpg",
     "static/media/be-boosted_logo_white.png": "/static/media/be-boosted_logo_white.4302903304a740e68d74.png",
     "static/media/oreo_concept_with_copyright.png": "/static/media/oreo_concept_with_copyright.194ee43250836e1de712.png",
     "static/media/image_Cleo_US_talk.JPG": "/static/media/image_Cleo_US_talk.0048523e491b8332d7d0.JPG",
     "static/media/jdpg_mv_discussion.jpeg": "/static/media/jdpg_mv_discussion.d984a4f417c63195ece7.jpeg",
+    "static/media/staedtler_award_with_credits.png": "/static/media/staedtler_award_with_credits.159e6d85da6fe007318b.png",
     "static/media/lab_image.jpg": "/static/media/lab_image.7157a5fa9808a0f9473d.jpg",
     "static/media/profile_picture_SB_2025.jpeg": "/static/media/profile_picture_SB_2025.3f5a3ca7920cd4634647.jpeg",
     "static/media/Logo_HELLA_neu.png": "/static/media/Logo_HELLA_neu.b0310ed305dc7d0c9e40.png",
@@ -19,6 +20,7 @@
     "static/media/image_CLEO_europe.jpg": "/static/media/image_CLEO_europe.36a16d63af7dd1e3a8f3.jpg",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
     "static/media/LNLM-Logo-Komplett-Schwarz-neu-scaled.jpg": "/static/media/LNLM-Logo-Komplett-Schwarz-neu-scaled.89d4fd8de4d9da4ef6c4.jpg",
+    "static/media/2025_09_Almetes_award.jpg": "/static/media/2025_09_Almetes_award.0072c480c69f6e491b0c.jpg",
     "static/media/image_SPIE_photonics_2.jpg": "/static/media/image_SPIE_photonics_2.510c9114f516f9bc4965.jpg",
     "static/media/image_SPIE_photonics.jpg": "/static/media/image_SPIE_photonics.17a4da75db6edfee11b2.jpg",
     "static/media/LIMUN_image_cutted.jpg": "/static/media/LIMUN_image_cutted.02375c692e9aa6c74a79.jpg",
@@ -35,8 +37,8 @@
     "static/media/Logo-Deutschlandstipendium-1.jpg": "/static/media/Logo-Deutschlandstipendium-1.02036050c1facab3fdb8.jpg",
     "static/media/Elitenetzwerk_Bavaria.png": "/static/media/Elitenetzwerk_Bavaria.641ff5a9e5aab83d73fb.png",
     "index.html": "/index.html",
-    "main.e15b7c22.css.map": "/static/css/main.e15b7c22.css.map",
-    "main.f4da37c6.js.map": "/static/js/main.f4da37c6.js.map"
+    "main.a3372501.css.map": "/static/css/main.a3372501.css.map",
+    "main.6b04a3b2.js.map": "/static/js/main.6b04a3b2.js.map"
   },
-  "entrypoints": ["static/css/main.e15b7c22.css", "static/js/main.f4da37c6.js"]
+  "entrypoints": ["static/css/main.a3372501.css", "static/js/main.6b04a3b2.js"]
 }
