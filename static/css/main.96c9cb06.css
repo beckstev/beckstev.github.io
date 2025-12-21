@@ -1429,6 +1429,137 @@ span.certificate-tag:hover {
   font-weight: 700;
   padding: 0 20px;
 }
+.privacy-container {
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 2rem;
+}
+.privacy-content h1 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.privacy-content h2 {
+  border-bottom: 2px solid #645beb;
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  padding-bottom: 0.5rem;
+}
+.privacy-content h3 {
+  color: #000;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+}
+.privacy-content p {
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.privacy-content ul {
+  list-style-type: disc;
+  margin: 1rem 0 1rem 2rem;
+}
+.privacy-content ul li {
+  color: #000;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+.privacy-content ul li strong {
+  color: #000;
+}
+.privacy-content a {
+  color: #645beb;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--duration-normal) var(--ease-in-out);
+}
+.privacy-content a:hover {
+  color: #8c43ce;
+  text-decoration: underline;
+}
+.privacy-section {
+  border-bottom: 1px solid #0000001a;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+.privacy-section:last-child {
+  border-bottom: none;
+}
+.dark-mode.privacy-content h1,
+.dark-mode.privacy-content h2,
+.dark-mode.privacy-content h3,
+.dark-mode.privacy-content p,
+.dark-mode.privacy-content ul li,
+.dark-mode.privacy-content ul li strong {
+  color: #fff;
+}
+.dark-mode.privacy-content a {
+  color: #09d3ac;
+}
+.dark-mode.privacy-content a:hover {
+  color: #1af5cb;
+}
+.dark-mode.privacy-section {
+  border-bottom-color: #ffffff1a;
+}
+.manage-consent-btn {
+  background-color: #645beb;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 12px 24px;
+  transition: background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--duration-normal) var(--ease-in-out);
+}
+.manage-consent-btn:hover {
+  background-color: #8c43ce;
+}
+.manage-consent-btn.dark-mode {
+  background-color: #09d3ac;
+}
+.manage-consent-btn.dark-mode:hover {
+  background-color: #1af5cb;
+}
+.consent-note {
+  color: #666 !important;
+  font-size: 0.9rem !important;
+  font-style: italic;
+}
+@media (max-width: 768px) {
+  .privacy-container {
+    margin: 1rem auto;
+    padding: 1rem;
+  }
+  .privacy-content h1 {
+    font-size: 2rem;
+  }
+  .privacy-content h2 {
+    font-size: 1.5rem;
+  }
+  .privacy-content h3 {
+    font-size: 1.1rem;
+  }
+  .privacy-content p {
+    font-size: 0.95rem;
+  }
+  .manage-consent-btn {
+    padding: 14px 20px;
+    width: 100%;
+  }
+}
 :root {
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -1613,4 +1744,4 @@ span.certificate-tag:hover {
   color: #fff;
   transition: "0.1s";
 }
-/*# sourceMappingURL=main.0c5b8ba2.css.map*/
+/*# sourceMappingURL=main.96c9cb06.css.map*/
