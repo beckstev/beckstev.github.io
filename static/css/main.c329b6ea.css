@@ -337,6 +337,11 @@ input:checked + .slider:after {
   line-height: 1.1;
   margin: 20px 0;
 }
+.greeting-image-div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
 .greeting-image-div > img {
   border-radius: 10px;
   height: auto;
@@ -850,6 +855,9 @@ input:checked + .slider:after {
     text-align: center;
   }
 }
+.achievement-main-div {
+  min-height: 200px;
+}
 .achievement-heading {
   font-size: 56px;
   font-weight: 400;
@@ -1205,33 +1213,7 @@ span.certificate-tag:hover {
   width: 250px;
 }
 .slide-button {
-  height: 380px !important;
   top: 50%;
-}
-@media (max-width: 768px) {
-  .slide-button {
-    border: none !important;
-    height: 160px !important;
-    padding: 0 !important;
-    top: 360px !important;
-    transform: none !important;
-    transition: background 0.3s ease-in-out;
-    width: 40px !important;
-  }
-  .slide-button.prev {
-    background: linear-gradient(90deg, #55198b, #0000);
-    left: 10px;
-  }
-  .slide-button.next {
-    background: linear-gradient(90deg, #0000, #55198b);
-    right: 10px;
-  }
-  .slide-button:hover {
-    opacity: 0.8;
-  }
-  .my-arrow {
-    font-size: 15px;
-  }
 }
 .talks-carousel {
   align-items: center;
@@ -1335,14 +1317,14 @@ span.certificate-tag:hover {
   color: #fff;
   cursor: pointer;
   display: flex;
-  height: 180px !important;
+  height: 90% !important;
   justify-content: center;
   padding: 0.5rem 1rem;
   position: absolute;
-  top: 380px !important;
+  top: 50% !important;
   transform: translateY(-50%);
   transition: background-color 0.3s ease;
-  width: 40px !important;
+  width: 50px !important;
 }
 .slide-button.prev {
   background: linear-gradient(90deg, #55198b, #0000);
@@ -1361,26 +1343,26 @@ span.certificate-tag:hover {
 @media (max-width: 768px) {
   .slide-button {
     border: none !important;
-    height: 180px !important;
+    height: 90% !important;
     padding: 0 !important;
-    top: 200px !important;
-    transform: none !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
     transition: background 0.3s ease-in-out;
-    width: 40px !important;
+    width: 50px !important;
   }
   .slide-button.prev {
     background: linear-gradient(90deg, #55198b, #0000);
-    left: 10px;
+    left: 5px;
   }
   .slide-button.next {
     background: linear-gradient(90deg, #0000, #55198b);
-    right: 10px;
+    right: 5px;
   }
   .slide-button:hover {
     opacity: 0.8;
   }
   .my-arrow {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 .splash-container {
@@ -1410,4 +1392,4 @@ span.certificate-tag:hover {
   color: #fff;
   transition: "0.1s";
 }
-/*# sourceMappingURL=main.a3372501.css.map*/
+/*# sourceMappingURL=main.c329b6ea.css.map*/

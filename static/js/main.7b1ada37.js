@@ -1,4 +1,4 @@
-/*! For license information please see main.a98d07cc.js.LICENSE.txt */
+/*! For license information please see main.7b1ada37.js.LICENSE.txt */
 (() => {
   var __webpack_modules__ = {
       160: (e, t, r) => {
@@ -27998,7 +27998,7 @@
                         children: (0, h.jsx)("img", {
                           src: r(1338),
                           alt: "Steven Becker",
-                          style: {marginLeft: "160px"}
+                          loading: "eager"
                         })
                       })
                     ]
@@ -29432,10 +29432,11 @@
         function $() {
           const e = (e, t) => {
               U({
-                particleCount: 100,
+                particleCount: 50,
                 spread: 70,
                 origin: {x: t, y: 0.6},
-                zIndex: 9999
+                zIndex: 9999,
+                disableForReducedMotion: !0
               }),
                 (function (e) {
                   e && window.open(e, "_blank").focus();
@@ -29478,7 +29479,8 @@
                                       children: (0, h.jsx)("img", {
                                         src: r.image,
                                         alt: r.projectName,
-                                        className: "project-cover-image"
+                                        className: "project-cover-image",
+                                        loading: "lazy"
                                       })
                                     })
                                   : null,
@@ -29539,7 +29541,8 @@
                 children: (0, h.jsx)("img", {
                   src: e.image,
                   alt: e.imageAlt || "Card Thumbnail",
-                  className: "image-honor-logo"
+                  className: "image-honor-logo",
+                  loading: "lazy"
                 })
               }),
               (0, h.jsxs)("div", {
@@ -29589,6 +29592,7 @@
             ? (0, h.jsx)(D.zW, {
                 bottom: !0,
                 duration: 1e3,
+                distance: "20px",
                 children: (0, h.jsx)("div", {
                   className: "main",
                   id: "achievements",
@@ -30878,7 +30882,8 @@
                             children: (0, h.jsx)("img", {
                               src: r.image,
                               alt: r.title,
-                              className: "card-image"
+                              className: "card-image",
+                              loading: "lazy"
                             })
                           }),
                           (0, h.jsxs)("div", {
@@ -31016,7 +31021,8 @@
                             children: (0, h.jsx)("img", {
                               src: r.image,
                               alt: r.title,
-                              className: "image-comms-event"
+                              className: "image-comms-event",
+                              loading: "lazy"
                             })
                           }),
                           (0, h.jsxs)("div", {
@@ -33301,4 +33307,4 @@
     (__webpack_require__.p = "/");
   var __webpack_exports__ = __webpack_require__(4285);
 })();
-//# sourceMappingURL=main.a98d07cc.js.map
+//# sourceMappingURL=main.7b1ada37.js.map
