@@ -85,19 +85,42 @@
       crossorigin
     />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-135618960-2"
-    ></script>
+    <!-- Google Analytics 4 (gtag.js) with Consent Mode -->
     <script>
+      // Initialize Google Analytics consent mode with defaults
       window.dataLayer = window.dataLayer || [];
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag("js", new Date());
 
-      gtag("config", "UA-135618960-2");
+      // Set default consent to 'denied' until user makes a choice
+      gtag("consent", "default", {
+        analytics_storage: "denied",
+        ad_storage: "denied"
+      });
+
+      // Check if user has made a previous consent choice
+      const analyticsConsent = localStorage.getItem("analyticsConsent");
+      if (analyticsConsent === "accepted") {
+        gtag("consent", "update", {
+          analytics_storage: "granted"
+        });
+      }
+
+      gtag("js", new Date());
+    </script>
+
+    <!-- Google Analytics 4 Measurement ID -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-EK5DXY5TH7"
+    ></script>
+    <script>
+      gtag("config", "G-EK5DXY5TH7", {
+        anonymize_ip: true,
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
     </script>
 
     <link

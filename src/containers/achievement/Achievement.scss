@@ -1,7 +1,9 @@
 @import "../../_globalColor";
+@import "../../_variables";
 
 .achievement-main-div {
-  min-height: 200px;
+  min-height: 400px;
+  width: 100%;
 }
 
 .achievement-heading {
@@ -19,20 +21,37 @@
   color: $subTitle;
 }
 
+.achievement-cards-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
 /* Media Query */
-@media (max-width: 1380px) {
+@include tablet {
   .achievement-heading {
     font-size: 40px;
   }
 }
-@media (max-width: 768px) {
+
+@include mobile {
   .achievement-heading {
     font-size: 30px;
     text-align: center;
   }
+
   .achievement-subtitle {
     font-size: 16px;
     line-height: normal;
     text-align: center;
+  }
+
+  .achievement-main-div {
+    min-height: auto;
+  }
+
+  .achievement-cards-div {
+    grid-template-columns: 1fr;
   }
 }

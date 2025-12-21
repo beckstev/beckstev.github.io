@@ -18,6 +18,22 @@ export default function Footer() {
             developerFolio
           </a>
         </p>
+        <p
+          className={
+            isDark
+              ? "dark-mode footer-text footer-links"
+              : "footer-text footer-links"
+          }
+        >
+          <a href="#privacy">Privacy Policy</a> |
+          <a
+            href="https://www.google.com/analytics/learn/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Analytics Info
+          </a>
+        </p>
       </div>
     </Fade>
   );

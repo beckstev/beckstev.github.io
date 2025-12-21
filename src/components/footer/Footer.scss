@@ -1,4 +1,5 @@
 @import "../../_globalColor";
+@import "../../_variables";
 
 .footer-text {
   text-align: center;
@@ -7,6 +8,31 @@
 
 .dark-mode {
   color: $textColorDark !important;
+}
+
+.footer-links {
+  margin-top: 1rem !important;
+  font-size: 0.9rem;
+
+  a {
+    color: $skillsColor;
+    text-decoration: none;
+    @include transition(color);
+    margin: 0 0.25rem;
+
+    &:hover {
+      color: $buttonHover;
+      text-decoration: underline;
+    }
+  }
+
+  .dark-mode & a {
+    color: $appLink;
+
+    &:hover {
+      color: lighten($appLink, 10%);
+    }
+  }
 }
 
 .footer-div {

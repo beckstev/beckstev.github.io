@@ -17,8 +17,6 @@ export default function EducationCard({school}) {
   };
   const {isDark} = useContext(StyleContext);
 
-  if (!school.logo)
-    console.error(`Image of ${school.name} is missing in education section`);
   return (
     <div>
       <Fade left duration={1000}>

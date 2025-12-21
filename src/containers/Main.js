@@ -15,9 +15,11 @@ import Profile from "./profile/Profile";
 import TalkCarousel from "./talks_as_carousel/TalkCarousel";
 import CommsCarousel from "./comms_as_carousel/CommsCarousel";
 import SplashScreen from "./splashScreen/SplashScreen";
+import Privacy from "./privacy/Privacy";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
+import CookieConsent from "../components/cookieConsent/CookieConsent";
 import "./Main.scss";
 
 const Main = () => {
@@ -25,6 +27,7 @@ const Main = () => {
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
+  const [showPrivacy, setShowPrivacy] = useState(false);
 
   useEffect(() => {
     if (splashScreen.enabled) {
@@ -38,6 +41,17 @@ const Main = () => {
     }
   }, []);
 
+  useEffect(() => {
+    // Check if URL has #privacy hash
+    const checkHash = () => {
+      setShowPrivacy(window.location.hash === "#privacy");
+    };
+
+    checkHash();
+    window.addEventListener("hashchange", checkHash);
+    return () => window.removeEventListener("hashchange", checkHash);
+  }, []);
+
   const changeTheme = () => {
     setIsDark(!isDark);
   };
@@ -47,8 +61,16 @@ const Main = () => {
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
+        ) : showPrivacy ? (
+          <>
+            <Header />
+            <Privacy />
+            <Footer />
+            <ScrollToTopButton />
+          </>
         ) : (
           <>
+            <CookieConsent />
             <Header />
             <Greeting />
             <Skills />

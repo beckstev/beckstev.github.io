@@ -4,9 +4,8 @@ import {Fade} from "react-reveal";
 import {formatFileSizeDisplay} from "../../utils";
 
 export default function GithubRepoCard({repo, isDark}) {
-  function openUrlInNewTab(url, name) {
+  function openUrlInNewTab(url) {
     if (!url) {
-      console.log(`URL in ${name} is undefined`);
       return;
     }
     var win = window.open(url, "_blank");
