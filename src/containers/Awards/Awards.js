@@ -16,12 +16,13 @@ export default function Project() {
 
   // 2. Create a new function to handle the click
   const handleButtonConfetti = (url, xVal) => {
-    // Fire the confetti
+    // Fire the confetti with reduced particle count for better performance
     confetti({
-      particleCount: 100,
+      particleCount: 50,
       spread: 70,
       origin: {x: xVal, y: 0.6}, // Starts slightly below center
-      zIndex: 9999 // Ensures it appears on top of everything
+      zIndex: 9999, // Ensures it appears on top of everything
+      disableForReducedMotion: true // Respects user's motion preferences
     });
 
     // Open the URL
@@ -64,6 +65,7 @@ export default function Project() {
                         src={project.image}
                         alt={project.projectName}
                         className="project-cover-image"
+                        loading="lazy"
                       ></img>
                     </div>
                   ) : null}

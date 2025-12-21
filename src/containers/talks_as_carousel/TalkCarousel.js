@@ -76,7 +76,7 @@ export default function TalksCarousel() {
               }}
             >
               <div className="talk-image">
-                <img src={talk.image} alt={talk.title} className="card-image" />
+                <img src={talk.image} alt={talk.title} className="card-image" loading="lazy" />
               </div>
               <div className="talk-details">
                 <h3 className={isDark ? "dark-mode card-title" : "card-title"}>

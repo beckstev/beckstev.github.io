@@ -57,7 +57,7 @@ export default function Greeting() {
               <img
                 src={require("../../assets/images/profile_picture_SB_2025.jpeg")}
                 alt="Steven Becker"
-                style={{marginLeft: "160px"}}
+                loading="eager"
               />
             }
           </div>

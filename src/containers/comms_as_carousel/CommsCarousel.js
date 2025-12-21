@@ -76,6 +76,7 @@ export default function TalksCarousel() {
                   src={talk.image}
                   alt={talk.title}
                   className="image-comms-event"
+                  loading="lazy"
                 />
               </div>
               <div className="talk-details">

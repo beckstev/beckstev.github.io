@@ -13,7 +13,7 @@ export default function Achievement() {
   }
 
   return (
-    <Fade bottom duration={1000}>
+    <Fade bottom duration={1000} distance="20px">
       <div className="main" id="achievements">
         <div className="achievement-main-div">
           <div className="achievement-header">

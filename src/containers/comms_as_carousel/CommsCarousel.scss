@@ -117,9 +117,9 @@
   border-radius: 4px;
   transition: background-color 0.3s ease;
   position: absolute;
-  top: 380px !important;
-  height: 180px !important;
-  width: 40px !important;
+  top: 50% !important;
+  height: 90% !important;
+  width: 50px !important;
   transform: translateY(-50%);
   display: flex;
   align-items: center;
@@ -147,21 +147,21 @@
 @media (max-width: 768px) {
   .slide-button {
     border: none !important;
-    top: 200px !important;
-    height: 180px !important;
-    width: 40px !important;
-    transform: none !important;
+    top: 50% !important;
+    height: 90% !important;
+    width: 50px !important;
+    transform: translateY(-50%) !important;
     padding: 0 !important;
     transition: background 0.3s ease-in-out;
 
     &.prev {
       background: linear-gradient(to right, $buttonColor, transparent);
-      left: 10px;
+      left: 5px;
     }
 
     &.next {
       background: linear-gradient(to right, transparent, $buttonColor);
-      right: 10px;
+      right: 5px;
     }
 
     &:hover {
@@ -170,7 +170,7 @@
   }
 
   .my-arrow {
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 

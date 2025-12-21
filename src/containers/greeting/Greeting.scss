@@ -57,6 +57,12 @@
   line-height: 1.1; /* optional: controls spacing between lines inside each <p> */
 }
 
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .greeting-image-div > img {
   max-width: 70%;
   height: auto;
