@@ -366,7 +366,7 @@ const talksData = {
 // Being a communicator
 
 const communicatorSection = {
-  title: "Being a communicator",
+  title: "Being a Communicator",
   display: true,
   subTitle:
     "I constantly practice my communication skill to build bridges between different groups/fields ",
