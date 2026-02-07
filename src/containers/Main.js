@@ -16,6 +16,7 @@ import TalkCarousel from "./talks_as_carousel/TalkCarousel";
 import CommsCarousel from "./comms_as_carousel/CommsCarousel";
 import SplashScreen from "./splashScreen/SplashScreen";
 import Privacy from "./privacy/Privacy";
+import Impressum from "./impressum/Impressum";
 import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
@@ -28,6 +29,7 @@ const Main = () => {
   const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
     useState(true);
   const [showPrivacy, setShowPrivacy] = useState(false);
+  const [showImpressum, setShowImpressum] = useState(false);
 
   useEffect(() => {
     if (splashScreen.enabled) {
@@ -52,6 +54,16 @@ const Main = () => {
     return () => window.removeEventListener("hashchange", checkHash);
   }, []);
 
+  useEffect(() => {
+    const checkHash = () => {
+      setShowImpressum(window.location.hash === "#impressum");
+    };
+
+    checkHash();
+    window.addEventListener("hashchange", checkHash);
+    return () => window.removeEventListener("hashchange", checkHash);
+  }, []);
+
   const changeTheme = () => {
     setIsDark(!isDark);
   };
@@ -65,6 +77,13 @@ const Main = () => {
           <>
             <Header />
             <Privacy />
+            <Footer />
+            <ScrollToTopButton />
+          </>
+        ) : showImpressum ? (
+          <>
+            <Header />
+            <Impressum />
             <Footer />
             <ScrollToTopButton />
           </>

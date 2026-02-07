@@ -1,0 +1,178 @@
+@import "../../_globalColor";
+@import "../../_variables";
+
+.privacy-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.privacy-content {
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: $titleColor;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: $titleColor;
+    border-bottom: 2px solid $skillsColor;
+    padding-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: $textColor;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: $textColor;
+  }
+
+  ul {
+    margin: 1rem 0 1rem 2rem;
+    list-style-type: disc;
+
+    li {
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+      color: $textColor;
+
+      strong {
+        color: $titleColor;
+      }
+    }
+  }
+
+  a {
+    color: $skillsColor;
+    text-decoration: none;
+    font-weight: 500;
+    @include transition(color);
+
+    &:hover {
+      color: $buttonHover;
+      text-decoration: underline;
+    }
+  }
+}
+
+.privacy-section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Dark mode */
+.dark-mode {
+  &.privacy-content {
+    h1,
+    h2,
+    h3 {
+      color: $textColorDark;
+    }
+
+    p {
+      color: $textColorDark;
+    }
+
+    ul li {
+      color: $textColorDark;
+
+      strong {
+        color: $textColorDark;
+      }
+    }
+
+    a {
+      color: $appLink;
+
+      &:hover {
+        color: lighten($appLink, 10%);
+      }
+    }
+  }
+
+  &.privacy-section {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Manage Consent Button */
+.manage-consent-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: $skillsColor;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  @include transition(background-color);
+
+  &:hover {
+    background-color: $buttonHover;
+  }
+
+  &.dark-mode {
+    background-color: $appLink;
+
+    &:hover {
+      background-color: lighten($appLink, 10%);
+    }
+  }
+}
+
+.consent-note {
+  font-size: 0.9rem !important;
+  color: #666 !important;
+  font-style: italic;
+}
+
+/* Responsive */
+@include mobile {
+  .privacy-container {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+
+  .privacy-content {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+
+  .manage-consent-btn {
+    width: 100%;
+    padding: 14px 20px;
+  }
+}

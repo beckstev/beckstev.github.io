@@ -25,7 +25,8 @@ export default function Footer() {
               : "footer-text footer-links"
           }
         >
-          <a href="#privacy">Privacy Policy</a> |
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#impressum">Impressum</a>
           <a
             href="https://www.google.com/analytics/learn/"
             target="_blank"
