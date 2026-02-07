@@ -1,4 +1,4 @@
-/*! For license information please see main.b554ffff.js.LICENSE.txt */
+/*! For license information please see main.daa867ad.js.LICENSE.txt */
 (() => {
   var __webpack_modules__ = {
       160: (e, t, n) => {
@@ -19096,7 +19096,7 @@
             ]
           },
           S = {
-            title: "Being a communicator",
+            title: "Being a Communicator",
             display: !0,
             subTitle:
               "I constantly practice my communication skill to build bridges between different groups/fields ",
@@ -19223,7 +19223,7 @@
                       (0, h.jsx)("li", {
                         children: (0, h.jsx)("a", {
                           href: "#skills",
-                          children: "Being a Scientist"
+                          children: "Being a Research Engineer"
                         })
                       }),
                     i &&
@@ -19265,7 +19265,7 @@
                       (0, h.jsx)("li", {
                         children: (0, h.jsx)("a", {
                           href: "#achievements",
-                          children: "Honors"
+                          children: "Supporters"
                         })
                       }),
                     (0, h.jsx)("li", {
@@ -34184,4 +34184,4 @@
     (__webpack_require__.p = "/");
   var __webpack_exports__ = __webpack_require__(2363);
 })();
-//# sourceMappingURL=main.b554ffff.js.map
+//# sourceMappingURL=main.daa867ad.js.map
