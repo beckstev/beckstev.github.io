@@ -12,8 +12,8 @@
 .project-cover-image {
   max-width: 100%;
   height: auto;
-  width: 350px;
-  border-radius: 8px;
+  width: 80%;
+  border-radius: 10px;
 }
 .card-title {
   color: $titleColor;
@@ -63,7 +63,6 @@
 }
 .project-image {
   position: relative;
-  height: 350px;
   overflow: hidden;
   display: flex;
   justify-content: center;

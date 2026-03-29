@@ -15,7 +15,7 @@
   font-size: 0.9rem;
 
   a {
-    color: $skillsColor;
+    color: $buttonColor;
     text-decoration: none;
     @include transition(color);
     margin: 0 0.25rem;
@@ -27,10 +27,10 @@
   }
 
   .dark-mode & a {
-    color: $appLink;
+    color: $buttonHover;
 
     &:hover {
-      color: lighten($appLink, 10%);
+      color: lighten($buttonHover, 10%);
     }
   }
 }

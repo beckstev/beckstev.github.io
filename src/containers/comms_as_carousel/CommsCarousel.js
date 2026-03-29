@@ -45,7 +45,7 @@ export default function TalksCarousel() {
 
   return (
     <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="talks-carousel">
+      <div className="main" id="comms-carousel">
         <div className="talk-header">
           <h1 className={isDark ? "dark-mode" : ""}>{commsData.title}</h1>
           <p

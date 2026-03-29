@@ -6,7 +6,6 @@
   box-sizing: border-box;
   padding: 20px 1rem;
   margin: 0 auto;
-  margin-bottom: 4rem;
   /* Right padding pulls card edge in to match greeting image */
   padding-right: calc(7% + 1rem);
 }
@@ -14,7 +13,7 @@
 .about-card {
   background-color: $lightBackground3;
   border-left: 4px solid $buttonColor;
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 1.5rem 2rem;
 }
 

@@ -10,7 +10,7 @@
   background: url(../../assets/images/talksCardBack.svg);
   width: 380px;
   height: 300px;
-  border-radius: 4px;
+  border-radius: 10px;
   box-shadow: 0px 20px 50px $darkBoxShadow;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -25,7 +25,7 @@
 }
 .mask {
   clip: rect(0px, 460px, 220px, 0px);
-  border-radius: 4px;
+  border-radius: 10px;
   position: absolute;
 }
 
