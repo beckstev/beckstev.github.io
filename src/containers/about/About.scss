@@ -1,0 +1,51 @@
+@import "../../_globalColor";
+@import "../../_variables";
+
+.about-main {
+  width: 90%;
+  box-sizing: border-box;
+  padding: 20px 1rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  /* Right padding pulls card edge in to match greeting image */
+  padding-right: calc(7% + 1rem);
+}
+
+.about-card {
+  background-color: $lightBackground3;
+  border-left: 4px solid $buttonColor;
+  border-radius: 6px;
+  padding: 1.5rem 2rem;
+}
+
+.about-card-dark {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-left-color: $buttonHover;
+}
+
+.about-text {
+  font-size: 23px;
+  line-height: 1.5;
+  color: $textColor;
+  margin: 0;
+}
+
+.about-text-dark {
+  color: $textColorDark;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .about-text {
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .about-main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-text {
+    font-size: 18px;
+  }
+}

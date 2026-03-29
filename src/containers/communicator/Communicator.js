@@ -10,21 +10,20 @@ export default function Communication() {
     return null;
   }
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="comms">
-      <div className="skills-main-div">
+    <div className="comm-outer" id="comms">
+      <div className="comm-main-div">
         <Fade left duration={1000}>
-          <div className="skills-text-div">
+          <div className="comm-text-div">
             <h1
-              className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-              style={{lineHeight: "1.2em"}}
+              className={
+                isDark ? "comm-heading comm-heading-dark" : "comm-heading"
+              }
             >
-              {communicatorSection.title}{" "}
+              {communicatorSection.title}
             </h1>
             <p
               className={
-                isDark
-                  ? "dark-mode subTitle skills-text-subtitle"
-                  : "subTitle skills-text-subtitle"
+                isDark ? "comm-subtitle comm-subtitle-dark" : "comm-subtitle"
               }
             >
               {communicatorSection.subTitle}
@@ -32,14 +31,7 @@ export default function Communication() {
             <div>
               {communicatorSection.skills.map((skills, i) => {
                 return (
-                  <p
-                    key={i}
-                    className={
-                      isDark
-                        ? "dark-mode subTitle skills-text"
-                        : "subTitle skills-text"
-                    }
-                  >
+                  <p key={i} className="comm-text">
                     {skills}
                   </p>
                 );
@@ -48,13 +40,11 @@ export default function Communication() {
           </div>
         </Fade>
         <Fade right duration={1000}>
-          <div className="communicator-image-div">
-            {
-              <img
-                alt="Steven discussing"
-                src={require("../../assets/images/comm_images/jdpg_mv_discussion.jpeg")}
-              />
-            }
+          <div className="comm-image-div">
+            <img
+              alt="Steven discussing"
+              src={require("../../assets/images/comm_images/jdpg_mv_discussion.jpeg")}
+            />
           </div>
         </Fade>
       </div>

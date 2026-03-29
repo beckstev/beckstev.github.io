@@ -68,6 +68,43 @@
   background-color: $instagram;
 }
 
+/* LinkedIn prominent pill */
+.linkedin-prominent {
+  display: inline-flex;
+  align-items: center;
+  background-color: $linkedin;
+  border-radius: 2rem;
+  padding: 0 1rem 0 0;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+  vertical-align: middle;
+  height: 2.6rem;
+}
+
+.linkedin-prominent i {
+  margin: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  flex-shrink: 0;
+}
+
+.linkedin-label {
+  color: $textColorDark;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-left: 0.25rem;
+  line-height: 1;
+}
+
+.linkedin-prominent:hover {
+  background-color: darken($linkedin, 10%);
+}
+
+.linkedin-prominent:hover i {
+  background-color: transparent;
+}
+
 /* Hover Transition */
 .twitter i:hover,
 .google i:hover,

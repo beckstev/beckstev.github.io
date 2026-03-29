@@ -6,22 +6,22 @@ import StyleContext from "../../contexts/StyleContext";
 import {
   greeting,
   workExperiences,
+  aboutSection,
+  missionSection,
   skillsSection,
-  talksData,
   achievementSection,
   resumeSection,
-  bigProjects,
   communicatorSection
 } from "../../portfolio";
 
 function Header() {
   const {isDark} = useContext(StyleContext);
   const viewExperience = workExperiences.display;
+  const viewAbout = aboutSection.display;
+  const viewMission = missionSection.display;
   const viewSkills = skillsSection.display;
-  const viewPapers = bigProjects.display;
   const viewComms = communicatorSection.display;
   const viewAchievement = achievementSection.display;
-  const viewTalks = talksData.display;
   const viewResume = resumeSection.display;
 
   return (
@@ -40,24 +40,24 @@ function Header() {
           <span className={isDark ? "navicon navicon-dark" : "navicon"}></span>
         </label>
         <ul className={isDark ? "dark-menu menu" : "menu"}>
+          {viewAbout && (
+            <li>
+              <a href="#about">About</a>
+            </li>
+          )}
+          {viewMission && (
+            <li>
+              <a href="#mission">Industry</a>
+            </li>
+          )}
           {viewSkills && (
             <li>
-              <a href="#skills">Being a Research Engineer</a>
-            </li>
-          )}
-          {viewPapers && (
-            <li>
-              <a href="#papers">Papers</a>
-            </li>
-          )}
-          {viewTalks && (
-            <li>
-              <a href="#talks-carousel">Talks & Posters</a>
+              <a href="#skills">Research Foundation</a>
             </li>
           )}
           {viewComms && (
             <li>
-              <a href="#comms">Being a Communicator</a>
+              <a href="#comms">Communicator</a>
             </li>
           )}
           {viewExperience && (

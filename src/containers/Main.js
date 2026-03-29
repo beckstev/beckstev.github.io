@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import Header from "../components/header/Header";
 import Greeting from "./greeting/Greeting";
+import About from "./about/About";
+import Mission from "./mission/Mission";
 import Skills from "./skills/Skills";
 import Communication from "./communicator/Communicator";
 import WorkExperience from "./workExperience/WorkExperience";
@@ -92,6 +94,8 @@ const Main = () => {
             <CookieConsent />
             <Header />
             <Greeting />
+            <About />
+            <Mission />
             <Skills />
             <WorkExperience />
             <StartupProject />

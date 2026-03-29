@@ -23,12 +23,12 @@ export default function socialMedia() {
       {socialMediaLinks.linkedin ? (
         <a
           href={socialMediaLinks.linkedin}
-          className="icon-button linkedin"
+          className="icon-button linkedin linkedin-prominent"
           target="_blank"
           rel="noopener noreferrer"
         >
           <i className="fab fa-linkedin-in"></i>
-          <span></span>
+          <span className="linkedin-label">LinkedIn</span>
         </a>
       ) : null}
 

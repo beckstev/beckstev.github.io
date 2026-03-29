@@ -1,0 +1,113 @@
+@import "../../_globalColor";
+
+.mission-outer {
+  width: 90%;
+  padding: 20px 10px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.mission-heading {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: $textColor;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+
+.mission-heading-dark {
+  color: $textColorDark;
+}
+
+.mission-body {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0rem 1rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  margin-bottom: 4rem;
+}
+
+.mission-body > * {
+  flex: 1;
+}
+
+.mission-image-div img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.mission-text-div {
+  max-width: 600px;
+}
+
+.mission-statement {
+  font-size: 20px;
+  line-height: 1.6;
+  color: $subTitle;
+  margin: 0 0 1.25rem 0;
+}
+
+.mission-keyword {
+  font-weight: 700;
+  color: $buttonColor;
+}
+
+.mission-keyword-dark {
+  color: $buttonHover;
+}
+
+.mission-divider {
+  width: 120px;
+  height: 2px;
+  background-color: rgba($buttonColor, 1);
+  border: none;
+  border-radius: 2px;
+  margin: 0 0 1.25rem 0;
+}
+
+.mission-role {
+  font-size: 19px;
+  line-height: 1.6;
+  color: $subTitle;
+  margin: 0 0 1rem 0;
+}
+
+.mission-highlight {
+  font-size: 18px;
+  line-height: 1.6;
+  color: $subTitle;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .mission-heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .mission-heading {
+    font-size: 30px;
+    text-align: center;
+  }
+  .mission-body {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .mission-text-div {
+    max-width: 100%;
+  }
+  .mission-statement {
+    font-size: 16px;
+  }
+  .mission-role {
+    font-size: 16px;
+  }
+  .mission-highlight {
+    font-size: 16px;
+  }
+}

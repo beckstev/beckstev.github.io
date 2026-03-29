@@ -1,7 +1,6 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
 import {skillsSection} from "../../portfolio";
-import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
@@ -10,55 +9,55 @@ export default function Skills() {
     return null;
   }
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
-      <div className="skills-main-div">
-        <Fade left duration={1000}>
-          <div className="skills-image-div">
-            {
-              <img
-                alt="Steven Becker researching/engineering on innovative solutions to leverage Photonic Machine Learning / Optical Computing / Photonic Neuromorphic Computing"
-                src={require("../../assets/images/lab_image.jpg")}
-              ></img>
+    <div className={isDark ? "notebook notebook-dark" : "notebook"} id="skills">
+      <div className="notebook-content">
+        <div className="notebook-text">
+          <p className="notebook-entry">Entry #47 — Learning from the Best</p>
+          <h2
+            className={
+              isDark
+                ? "notebook-heading notebook-heading-dark"
+                : "notebook-heading"
             }
-          </div>
-        </Fade>
-        <Fade right duration={1000}>
-          <div className="skills-text-div">
-            <h1
-              className={isDark ? "dark-mode skills-heading" : "skills-heading"}
-            >
-              {"Being a"}
-              {<br />}
-              {skillsSection.title}
-              {"  "}
-            </h1>
-            <p
-              className={
-                isDark
-                  ? "dark-mode subTitle skills-text-subtitle"
-                  : "subTitle skills-text-subtitle"
-              }
-            >
-              {skillsSection.subTitle}
-            </p>
-            <div>
-              {skillsSection.skills.map((skills, i) => {
-                return (
-                  <p
-                    key={i}
-                    className={
-                      isDark
-                        ? "dark-mode subTitle skills-text"
-                        : "subTitle skills-text"
-                    }
-                  >
-                    {skills}
-                  </p>
-                );
-              })}
+          >
+            {skillsSection.title}
+          </h2>
+          <p className="notebook-subtitle">{skillsSection.subTitle}</p>
+          <hr className="notebook-divider" />
+          {skillsSection.skills.map((skill, i) => (
+            <div key={i}>
+              <p
+                className={
+                  isDark
+                    ? "notebook-label notebook-label-dark"
+                    : "notebook-label"
+                }
+              >
+                <strong>Proudest Innovation</strong>
+              </p>
+              <p className="notebook-innovation">{skill}</p>
             </div>
+          ))}
+          <a href="#papers" className="notebook-cta">
+            <span>See impact</span>
+            <span className="notebook-cta-arrow">↓</span>
+          </a>
+        </div>
+        <div className="notebook-photo">
+          <div
+            className={
+              isDark
+                ? "notebook-photo-frame notebook-photo-frame-dark"
+                : "notebook-photo-frame"
+            }
+          >
+            <img
+              alt="Steven Becker in a photonics lab."
+              src={require("../../assets/images/lab_image.jpg")}
+            />
           </div>
-        </Fade>
+          <p className="notebook-photo-caption">Me in the lab. 2022</p>
+        </div>
       </div>
     </div>
   );

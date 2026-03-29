@@ -16,15 +16,6 @@
   width: 80%;
 }
 
-/* Mobile adjustments for the header title */
-@media (max-width: 768px) {
-  .talk-header-title {
-    width: 100% !important;
-    font-size: 2rem !important;
-    padding: 0 20rem !important;
-  }
-}
-
 .talks-container {
   display: flex;
   justify-content: center;
@@ -52,55 +43,16 @@
 }
 
 .talk-image {
-  width: 100% !important;
+  width: 100%;
   margin-bottom: 1rem;
   border-radius: 10px;
 }
 
-/* Mobile adjustments for carousel cards */
-@media (max-width: 768px) {
-  .talk-header-title {
-    width: 100% !important;
-    font-size: 2rem !important;
-    padding: 0 1rem !important;
-  }
-  .talks-container {
-    width: max-width !important; /* Make it full-width */
-    display: flex;
-    justify-content: center; /* Ensure content stays centered */
-  }
-  .talk-card {
-    width: 80% !important; /* 80% of .talks-container */
-    max-width: 100%; /* Ensure it doesn't exceed parent */
-    margin: 0 auto; /* Center it */
-    flex: 0 0 auto; /* Allow it to resize dynamically */
-  }
-  .talk-details {
-    width: 100% !important; /* Force full width */
-  }
-  .card-title {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: $textColor;
-  }
-
-  .card-location {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: $textColor;
-  }
-
-  .talk-image {
-    width: 100% !important;
-    margin-bottom: 1rem;
-    border-radius: 10px;
-  }
-}
-
 .card-image {
-  width: 250px;
+  width: 562px;
+  max-width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 .card-description {
@@ -108,80 +60,109 @@
   color: $textColor;
 }
 
-/* Default (desktop) navigation buttons */
+/* Navigation buttons */
 .slide-button {
-  background-color: $buttonColor;
-  border: none;
-  color: white;
-  padding: 0;
-  cursor: pointer;
-  border-radius: 0;
-  @include transition(background-color);
   position: absolute;
   top: 50%;
-  height: 350px;
-  width: 50px;
   transform: translateY(-50%);
-  @include flex-center;
   z-index: 10;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 1px solid rgba($buttonColor, 0.3);
+  background: $lightBackground1;
+  color: $buttonColor;
+  cursor: pointer;
+  @include flex-center;
+  @include transition(all);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
   &.prev {
-    background: linear-gradient(to right, $buttonColor, transparent);
-    left: -50px;
+    left: 10px;
   }
 
   &.next {
-    background: linear-gradient(to right, transparent, $buttonColor);
-    right: -50px;
+    right: 10px;
   }
 
   &:hover {
-    background-color: $buttonColor;
-    opacity: 0.9;
+    background: $buttonColor;
+    color: #fff;
+    border-color: $buttonColor;
   }
 }
 
-.my-arrow {
-  font-size: 20px;
+.slide-arrow {
+  font-size: 50px;
+  line-height: 1;
+  font-weight: 300;
 }
 
-/* Mobile-specific overrides for navigation buttons */
+/* Dark mode */
+.dark-mode .slide-button {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: $textColorDark;
+
+  &:hover {
+    background: $buttonColor;
+    border-color: $buttonColor;
+  }
+}
+
+/* Mobile */
 @include mobile {
+  .talk-header-title {
+    width: 100%;
+    font-size: 2rem;
+    padding: 0 1rem;
+  }
+
   .talks-container {
+    width: 100%;
     overflow: hidden;
   }
 
+  .talk-card {
+    width: 80%;
+    max-width: 100%;
+    margin: 0 auto;
+    flex: 0 0 auto;
+  }
+
+  .talk-details {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-location {
+    font-size: 1rem;
+    color: $textColor;
+  }
+
+  .talk-image {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+
   .slide-button {
-    border: none;
-    top: 50%;
-    height: 320px;
-    width: 50px;
-    transform: translateY(-50%);
-    padding: 0;
-    @include transition(background);
+    width: 36px;
+    height: 36px;
 
     &.prev {
-      background: linear-gradient(to right, $buttonColor, transparent);
-      left: 0;
+      left: 8px;
     }
 
     &.next {
-      background: linear-gradient(to right, transparent, $buttonColor);
-      right: 0;
-    }
-
-    &:hover {
-      opacity: 0.8;
+      right: 8px;
     }
   }
 
-  .my-arrow {
-    font-size: 18px;
+  .slide-arrow {
+    font-size: 20px;
   }
-}
-
-/* Dark mode override */
-.dark-mode {
-  background-color: $darkBackground;
-  color: $textColorDark;
 }

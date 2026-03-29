@@ -24,9 +24,9 @@ const greeting = {
   title1: "Moin,",
   title2: "I am Steven",
   subTitle: [
-    emoji("Researcher Engineer in Photonic Machine Learning"),
+    emoji("Researcher Engineer in Photonics"),
     "PhD in Physics",
-    "Immersed in the DeepTech World of Berlin"
+    "Fraunhofer HHI, Berlin"
   ],
   resumeLink: "", // Set to empty to hide the button; https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -37,7 +37,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "",
   linkedin: "https://www.linkedin.com/in/beckstev",
-  gmail: "steven.becker@mpl.mpg.de",
+  gmail: "",
   gitlab: "",
   facebook: "",
   medium: "",
@@ -47,24 +47,42 @@ const socialMediaLinks = {
   display: true // Set true to display this section, defaults to false
 };
 
+// About Section
+
+const aboutSection = {
+  description:
+    "I am building photonic systems for real-world applications: from simulation and design to hands-on lab validation. Bridging Optical Computing, Photonic Integrated Circuits, and Telecommunication.",
+  display: true
+};
+
+// Mission Section
+
+const missionSection = {
+  title: "Building at the Edge of Research and Industry",
+  mission:
+    "Bringing Optical Computing from the lab into real-world applications, building a platform that transfers across domains such telecommunication, sensing, and computing.",
+  role: "As Topical Lead for Optical Signal Processing at Fraunhofer HHI, I am driving strategy, project acquisition, and hands-on research",
+  highlights: [
+    emoji(
+      "⚡ Developing and characterizing Photonic Integrated Circuits: from fiber-array coupling on unpackaged SiN chips to validation of packaged PICs (e.g. InP)"
+    ),
+    emoji(
+      "🔬 Co-Built a simulation framework for optical transceivers covering the full chain from PIC design to DSP and BER analysis, enabling Hardware-Algorithm Co-Design for datacenter applications"
+    ),
+    emoji(
+      "🇪🇺 Secured funding EU Marie Skłodowska-Curie Doctoral Network, expanding applied photonics research across Europe"
+    )
+  ],
+  display: true
+};
+
 // Skills Section
 
 const skillsSection = {
-  title: "Research Engineer",
-  subTitle: emoji(
-    "🚀 Mission: Moving Photonic Machine Learning out of the lab into industry"
-  ),
+  title: "Research Foundation",
+  subTitle: emoji("Four Years of High-Impact Research at Max-Planck"),
   skills: [
-    emoji(
-      "👥 Engaged with stakeholders from industries to discuss use cases of Photonic Machine Learning"
-    ),
-    emoji(
-      "⚡ Designed projects to showcase the potential of Photonic Machine Learning beyond AI as topical lead at Fraunhofer HHI"
-    ),
-    emoji("🥳 Proud Innovation: "),
-    emoji(
-      "Unlocked the intersection between nonlinear light-sound dynamics and Photonic Machine Learning"
-    )
+    "Unlocked the intersection between nonlinear light-sound dynamics and Photonic Machine Learning"
   ],
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -474,6 +492,8 @@ export {
   greeting,
   socialMediaLinks,
   splashScreen,
+  aboutSection,
+  missionSection,
   skillsSection,
   workExperiences,
   bigProjects,

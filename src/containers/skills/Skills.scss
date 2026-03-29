@@ -1,72 +1,222 @@
 @import "../../_globalColor";
 
-.skills-main-div {
-  display: flex;
-  justify-content: center; /* horizontally centers content inside */
-  align-items: center; /* vertically aligns image and text -> So that image and text are on the same height.  */
+/* ── Notebook container ── */
+.notebook {
   width: 100%;
+  margin: 2rem 0;
+  position: relative;
   overflow: hidden;
-  gap: 2rem; /* adds space between image and text */
-  flex-wrap: wrap; /* ensures wrapping on smaller screens */
-  box-sizing: border-box;
-  padding: 2rem 1rem;
-}
-.skills-text-div {
-  margin-left: 0; /* handled by gap instead */
-  max-width: 600px; /* keeps text readable */
+  background-color: $lightBackground1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
-.skills-main-div > * {
+.notebook-dark {
+  background-color: $darkBackground;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* ── Red margin line ── */
+.notebook::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 72px;
+  width: 1px;
+  background-color: rgba(220, 53, 69, 0.3);
+  z-index: 1;
+}
+
+/* ── Content area ── */
+.notebook-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 2rem calc(5% + 1rem) 2rem 96px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ── Text side ── */
+.notebook-text {
   flex: 1;
-  margin-bottom: 30px;
+  min-width: 0;
+  max-width: 600px;
 }
 
-.skills-image-div > img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+.notebook-entry {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: $subTitle;
+  margin-bottom: 1rem;
 }
 
-.skills-heading {
+.notebook-heading {
   font-size: 56px;
   font-weight: 400;
   line-height: 1.4;
-}
-.subTitle {
-  color: $subTitle;
+  color: $textColor;
+  margin: 0 0 0.25rem 0;
 }
 
-/* Media Query */
+.notebook-heading-dark {
+  color: $textColorDark;
+}
+
+.notebook-subtitle {
+  font-size: 22px;
+  font-style: italic;
+  color: $subTitle;
+  margin: 0 0 1.5rem 0;
+}
+
+.notebook-divider {
+  width: 140px;
+  height: 2px;
+  background-color: rgba($buttonColor, 0.4);
+  border: none;
+  border-radius: 1px;
+  margin: 0 0 1.5rem 0;
+}
+
+.notebook-label {
+  font-size: 24px;
+  color: $buttonColor;
+  margin-bottom: 0.5rem;
+}
+
+.notebook-label-dark {
+  color: $buttonHover;
+}
+
+.notebook-innovation {
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.6;
+  color: $subTitle;
+  margin: 0 0 2rem 0;
+}
+
+/* ── CTA button ── */
+.notebook-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: $buttonColor;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0 4px 4px 0;
+  border-left: 3px solid darken($buttonColor, 10%);
+  transition: background-color 0.2s;
+}
+
+.notebook-cta:hover {
+  background-color: $buttonHover;
+}
+
+.notebook-cta-arrow {
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+/* ── Photo side ── */
+.notebook-photo {
+  flex-shrink: 0;
+  width: 520px;
+  color: $subTitle;
+  transform: rotate(2deg);
+  margin-left: auto;
+}
+
+.notebook-photo-frame {
+  border: 4px solid $lightBackground1;
+  box-shadow: $lightBoxShadowDark 0 2px 8px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.notebook-photo-frame-dark {
+  border-color: $darkBackground;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 2px 8px;
+}
+
+.notebook-photo-frame img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.notebook-photo-caption {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  color: $subTitle;
+  text-align: center;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* ── Responsive ── */
 @media (max-width: 1380px) {
-  .skills-heading {
+  .notebook-heading {
     font-size: 40px;
+  }
+  .notebook-subtitle {
+    font-size: 19px;
+  }
+  .notebook-label {
+    font-size: 20px;
+  }
+  .notebook-innovation {
+    font-size: 19px;
   }
 }
 @media (max-width: 768px) {
-  .skills-heading {
+  .notebook::before {
+    display: none;
+  }
+  .notebook-content {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  .notebook-heading {
     font-size: 30px;
     text-align: center;
   }
-  .greeting-text-p {
-    font-size: 16px;
-    line-height: normal;
-  }
-  .skills-main-div {
-    flex-direction: column;
-  }
-  .skills-text-div {
-    margin-left: 0px;
-    margin: 20px;
-  }
-  .skills-text {
-    font-size: 16px;
-  }
-  .skills-text-subtitle {
+  .notebook-subtitle {
     font-size: 16px;
     text-align: center;
   }
-  .skills-image-div {
-    /* display: none; */
-    order: 2;
+  .notebook-label {
+    font-size: 18px;
+  }
+  .notebook-innovation {
+    font-size: 16px;
+    text-align: center;
+  }
+  .notebook-cta {
+    font-size: 14px;
+  }
+  .notebook-photo {
+    width: 100%;
+    transform: none;
+    order: -1;
+  }
+  .notebook-photo-frame img {
+    height: 200px;
   }
 }

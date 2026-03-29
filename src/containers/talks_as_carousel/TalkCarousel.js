@@ -43,7 +43,7 @@ export default function TalksCarousel() {
         (currentSlide - 1 + talksData.talks.length) % talksData.talks.length ||
       index === (currentSlide + 1) % talksData.talks.length
     )
-      return 0.25;
+      return 0.4;
     return 0;
   };
 
@@ -70,7 +70,7 @@ export default function TalksCarousel() {
               className={`talk-card ${isDark ? "dark-mode" : ""}`}
               style={{
                 opacity: getOpacity(index),
-                transform: index === currentSlide ? "scale(1)" : "scale(.75)",
+                transform: index === currentSlide ? "scale(1)" : "scale(.85)",
                 display: getOpacity(index) > 0 ? "block" : "none",
                 width: index === currentSlide ? "100%" : "10%"
               }}
@@ -114,18 +114,18 @@ export default function TalksCarousel() {
         </div>
         <div className="buttons-container">
           <button
-            className={`slide-button prev ${isDark ? "dark-mode" : ""}`}
+            className="slide-button prev"
             onClick={handlePrevSlide}
             aria-label="Previous Slide"
           >
-            <span className="my-arrow"> ⬅️</span>
+            <span className="slide-arrow">&#8249;</span>
           </button>
           <button
-            className={`slide-button next ${isDark ? "dark-mode" : ""}`}
+            className="slide-button next"
             onClick={handleNextSlide}
             aria-label="Next Slide"
           >
-            <span className="my-arrow"> ➡️</span>
+            <span className="slide-arrow">&#8250;</span>
           </button>
         </div>
       </div>
