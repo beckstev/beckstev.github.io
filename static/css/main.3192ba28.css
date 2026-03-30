@@ -29,7 +29,7 @@ body {
 @media (max-width: 1380px) {
   body,
   html {
-    font-size: rem;
+    font-size: 1rem;
     line-height: normal;
   }
 }
@@ -407,7 +407,8 @@ input:checked + .slider:after {
     display: block;
   }
   .greeting-image-div {
-    height: 256px;
+    height: auto;
+    margin-top: 1.5rem;
     text-align: center;
     width: 100%;
   }
@@ -424,20 +425,20 @@ input:checked + .slider:after {
   margin-bottom: 10px;
 }
 .icon-button i {
-  border-radius: 2.6rem;
+  border-radius: 2.75rem;
   color: #fff;
   cursor: pointer;
   display: inline-block;
   font-size: 1.3rem;
-  height: 2.6rem;
-  line-height: 2.6rem;
+  height: 2.75rem;
+  line-height: 2.75rem;
   margin: 0 5px 10px;
   position: relative;
   text-align: center;
   transition: 0.2s ease-in;
   -webkit-user-select: none;
   user-select: none;
-  width: 2.6rem;
+  width: 2.75rem;
 }
 .facebook i {
   background-color: #3b5998;
@@ -474,7 +475,7 @@ input:checked + .slider:after {
   background-color: #0e76a8;
   border-radius: 2rem;
   display: inline-flex;
-  height: 2.6rem;
+  height: 2.75rem;
   padding: 0 1rem 0 0;
   text-decoration: none;
   transition: 0.2s ease-in;
@@ -515,6 +516,12 @@ input:checked + .slider:after {
   .social-media-div {
     text-align: center;
   }
+  .linkedin-label {
+    display: none;
+  }
+  .linkedin-prominent {
+    padding: 0;
+  }
 }
 .main-button {
   background-color: #55198b;
@@ -552,7 +559,7 @@ input:checked + .slider:after {
   .main-button {
     font-size: 0.938rem;
     margin-right: 0;
-    padding: 12px 18px;
+    padding: 14px 18px;
   }
 }
 @media (max-width: 320px) {
@@ -1557,9 +1564,8 @@ span.certificate-tag:hover {
   margin-top: -4rem;
   max-width: 100%;
 }
-@media (max-width: 1380px), (max-width: 768px) {
+@media (max-width: 1380px) {
   .contact-title {
-    font-size: 56px;
     font-size: 40px;
     font-weight: 400;
     text-align: center;
@@ -1579,6 +1585,12 @@ span.certificate-tag:hover {
   }
   .contact-image-div {
     display: none;
+  }
+}
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 30px;
+    text-align: center;
   }
 }
 .card-image {
@@ -1713,14 +1725,18 @@ span.certificate-tag:hover {
     width: 100%;
   }
   .slide-button {
-    height: 36px;
-    width: 36px;
+    background: #ffffff80;
+    height: 44px;
+    width: 44px;
   }
   .slide-button.prev {
-    left: 8px;
+    left: 4px;
   }
   .slide-button.next {
-    right: 8px;
+    right: 4px;
+  }
+  .dark-mode .slide-button {
+    background: #0006;
   }
   .slide-arrow {
     font-size: 20px;
@@ -2069,4 +2085,4 @@ span.certificate-tag:hover {
   color: #fff;
   transition: "0.1s";
 }
-/*# sourceMappingURL=main.dcc90307.css.map*/
+/*# sourceMappingURL=main.3192ba28.css.map*/
