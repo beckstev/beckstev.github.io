@@ -149,16 +149,21 @@
   }
 
   .slide-button {
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.5);
 
     &.prev {
-      left: 8px;
+      left: 4px;
     }
 
     &.next {
-      right: 8px;
+      right: 4px;
     }
+  }
+
+  .dark-mode .slide-button {
+    background: rgba(0, 0, 0, 0.4);
   }
 
   .slide-arrow {

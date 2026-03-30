@@ -1,18 +1,14 @@
-import React, {useState, useEffect, useContext} from "react";
+import React, {useState, useEffect, useContext, useRef} from "react";
 import "./TalkCarousel.scss";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 import {talksData} from "../../portfolio";
-import emoji from "react-easy-emoji";
-
-const getEmoji = selected_emoji => {
-  return emoji(selected_emoji);
-};
 
 export default function TalksCarousel() {
   const {isDark} = useContext(StyleContext);
   const [currentSlide, setCurrentSlide] = useState(1);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const touchStartX = useRef(0);
 
   useEffect(() => {
     const handleResize = () => {
@@ -47,6 +43,21 @@ export default function TalksCarousel() {
     return 0;
   };
 
+  const getCardWidth = index => {
+    if (isMobile) return index === currentSlide ? "100%" : undefined;
+    return index === currentSlide ? "100%" : "10%";
+  };
+
+  const handleTouchStart = e => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = e => {
+    const delta = e.changedTouches[0].clientX - touchStartX.current;
+    if (delta > 50) handlePrevSlide();
+    else if (delta < -50) handleNextSlide();
+  };
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="talks-carousel">
@@ -63,7 +74,11 @@ export default function TalksCarousel() {
           </p>
         </div>
 
-        <div className="talks-container">
+        <div
+          className="talks-container"
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
           {talksData.talks.map((talk, index) => (
             <div
               key={index}
@@ -72,7 +87,7 @@ export default function TalksCarousel() {
                 opacity: getOpacity(index),
                 transform: index === currentSlide ? "scale(1)" : "scale(.85)",
                 display: getOpacity(index) > 0 ? "block" : "none",
-                width: index === currentSlide ? "100%" : "10%"
+                width: getCardWidth(index)
               }}
             >
               <div className="talk-image">
@@ -111,8 +126,6 @@ export default function TalksCarousel() {
               </div>
             </div>
           ))}
-        </div>
-        <div className="buttons-container">
           <button
             className="slide-button prev"
             onClick={handlePrevSlide}
