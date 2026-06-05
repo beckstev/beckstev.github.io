@@ -1593,12 +1593,6 @@ span.certificate-tag:hover {
     text-align: center;
   }
 }
-.card-image {
-  border-radius: 10px;
-  height: auto;
-  max-width: 100%;
-  width: 562px;
-}
 .talks-carousel {
   align-items: center;
   display: flex;
@@ -2085,4 +2079,4 @@ span.certificate-tag:hover {
   color: #fff;
   transition: "0.1s";
 }
-/*# sourceMappingURL=main.3192ba28.css.map*/
+/*# sourceMappingURL=main.68102101.css.map*/
