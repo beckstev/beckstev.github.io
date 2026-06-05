@@ -24,9 +24,9 @@ const greeting = {
   title1: "Moin,",
   title2: "I am Steven",
   subTitle: [
-    emoji("Researcher Engineer in Photonics"),
-    "PhD in Physics",
-    "Fraunhofer HHI, Berlin"
+    emoji("Optical Engineer,"),
+    "PhD in Physics & Coffee Lover",
+    "OLIX, London"
   ],
   resumeLink: "", // Set to empty to hide the button; https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -51,26 +51,26 @@ const socialMediaLinks = {
 
 const aboutSection = {
   description:
-    "I am building photonic systems for real-world applications: from simulation and design to hands-on lab validation. Bridging Optical Computing, Photonic Integrated Circuits, and Telecommunication.",
+    "Solving the most consequential problem in the deployment of frontier AI.",
   display: true
 };
 
 // Mission Section
 
 const missionSection = {
-  title: "Building at the Edge of Research and Industry",
+  title: "Translating Optical Computing into Application",
   mission:
-    "Bringing Optical Computing from the lab into real-world applications, building a platform that transfers across domains such telecommunication, sensing, and computing.",
-  role: "As Topical Lead for Optical Signal Processing at Fraunhofer HHI, I am driving strategy, project acquisition, and hands-on research",
+    "Moving photonic computing from pure research labs into real-world systems, building cross-domain platforms for telecommunication, sensing, and AI hardware acceleration.",
+  role: "In a 10-month sprint at Fraunhofer HHI, I established the Photonic Neural Network domain from the ground up—bridging hardware-algorithm co-design with early venture validation.",
   highlights: [
     emoji(
-      "⚡ Developing and characterizing Photonic Integrated Circuits: from fiber-array coupling on unpackaged SiN chips to validation of packaged PICs (e.g. InP)"
+      "⚡ Hardware-Algorithm Co-Design: Built simulation stacks spanning PDKs (SiN/InP) to DSP/BER analysis, optimizing hardware-adapted matrix operations for next-generation AI datacenter architectures."
     ),
     emoji(
-      "🔬 Co-Built a simulation framework for optical transceivers covering the full chain from PIC design to DSP and BER analysis, enabling Hardware-Algorithm Co-Design for datacenter applications"
+      "🔬 Lab-to-Market Validation: Filed 2 patents in photonic neural networks, initiated a spin-off track via the xG-Incubator, and conducted early B2B customer validation for the underlying technology."
     ),
     emoji(
-      "🇪🇺 Secured funding EU Marie Skłodowska-Curie Doctoral Network, expanding applied photonics research across Europe"
+      "🇪🇺 Capital & Ecosystem Pipeline: Formulated a approved €1M+ EU Doctoral Network research project (SYNAPSE), drafted €3.3M in pending national grants, and expanded industry touchpoints with partners like Zeiss and Deutsche Telekom."
     )
   ],
   display: true
@@ -79,7 +79,7 @@ const missionSection = {
 // Skills Section
 
 const skillsSection = {
-  title: "Research Foundation",
+  title: "Technical Foundation",
   subTitle: emoji("Four Years of High-Impact Research at Max-Planck"),
   skills: [
     "Unlocked the intersection between nonlinear light-sound dynamics and Photonic Machine Learning"

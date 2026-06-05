@@ -14,7 +14,6 @@ import Podcast from "./podcast/Podcast";
 import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
-import TalkCarousel from "./talks_as_carousel/TalkCarousel";
 import CommsCarousel from "./comms_as_carousel/CommsCarousel";
 import SplashScreen from "./splashScreen/SplashScreen";
 import Privacy from "./privacy/Privacy";
@@ -100,7 +99,6 @@ const Main = () => {
             <WorkExperience />
             <StartupProject />
             <Awards />
-            <TalkCarousel />
             <Communication />
             <CommsCarousel />
             <Twitter />
