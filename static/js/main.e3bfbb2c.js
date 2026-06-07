@@ -1,4 +1,4 @@
-/*! For license information please see main.81c24cea.js.LICENSE.txt */
+/*! For license information please see main.e3bfbb2c.js.LICENSE.txt */
 (() => {
   var __webpack_modules__ = {
       7976(e, t, n) {
@@ -75,7 +75,7 @@
                 "\ud83d\udd2c Lab-to-Market Validation: Filed 2 patents in photonic neural networks, initiated a spin-off track via the xG-Incubator, and conducted early B2B customer validation for the underlying technology."
               ),
               o()(
-                "\ud83c\uddea\ud83c\uddfa Capital & Ecosystem Pipeline: Formulated a approved \u20ac1M+ EU Doctoral Network research project (SYNAPSE), drafted \u20ac3.3M in pending national grants, and expanded industry touchpoints with partners like Zeiss and Deutsche Telekom."
+                "\ud83c\uddea\ud83c\uddfa Capital & Ecosystem Pipeline: Significant contribution to an approved \u20ac1M+ EU Doctoral Network research project (SYNAPSE), drafted \u20ac3.3M in pending national grants, and expanded industry touchpoints with partners like Zeiss and Deutsche Telekom."
               )
             ],
             display: !0
@@ -361,9 +361,9 @@
           _ = {
             title: o()("Contact Me"),
             subtitle:
-              "Discuss a project or just want to say hi? My Inbox is open for all.",
+              "Discuss a project or just want to say hi? Just send me an invite on LinkedIn.",
             number: "",
-            email_address: "steven.becker@mpl.mpg.de"
+            email_address: ""
           },
           M = "twitter",
           A = !1;
@@ -34236,4 +34236,4 @@
     (__webpack_require__.p = "/");
   var __webpack_exports__ = __webpack_require__(7976);
 })();
-//# sourceMappingURL=main.81c24cea.js.map
+//# sourceMappingURL=main.e3bfbb2c.js.map
